@@ -6,9 +6,10 @@
         <link rel="stylesheet" href="styles.css"/>
         <link rel="icon" type="image/png" href="images/Logo.png" sizes="16x16">
         <link href="https://fonts.googleapis.com/css2?family=Inria+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
-        <title>Technical Writing</title>
+        <title>enTITIes</title>
     </head>
     <body class="body">
+        <div class="content">
         <nav class="nav__bar">
             <div class="nav__header">
                 <div class = "logo">
@@ -16,7 +17,7 @@
                     <h2 class = "subtitle">Taking Incredible Things Easy</h2>
                 </div>
             <ul>
-                <li><a class="nav-link home" href="#">Home</a></li>
+                <li><a class="nav-link home active" href="index.html">Home</a></li>
                 <li><a class="nav-link blogs" href="#">Blogs ▾</a>
                     <ul class="dropdown">
                         <li><a class="drop_blog" href="#">Alejandro</a></li>
@@ -27,10 +28,103 @@
                         <li><a class="drop_blog" href="#">Yumul</a></li>
                     </ul>
                 </li>
-                <li><a class="nav-link about_us" href="#">About us</a></li>
+                <li><a class="nav-link about_us" href="about us.html">About us</a></li>
             </ul>
             </div>
         </nav>
+
+        <div class="main_content">
+            <h1>Featured Blog</h1>
+            <div class="home_main">
+                <img src="assets/fill.png" class="fill_img" alt="background image">
+                <div class="home_main_text">
+                    <h2>Lorem Ipsum</h2>
+                    <p>By Randel Yumul</p>
+                    <p class="blog_content">Lorem Ipsum dolor sit amet, lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+                    <a class="read_now_main" href="#">Read Now</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="other">
+            <h1>Other Blogs</h1>
+            <div class="line"></div>
+        </div>
+
+            <div class="scroll_padding">
+                <div class="scroll_wrapper">
+                    <button class="scroll_btn left" onclick="scrollLeft()">
+                        <img src="assets/left.png" alt="Left Arrow" class="arrow_img">
+                    </button>
+                <div class="scroll_container" id="blogScroll">
+                    <div class="home_blogs">
+                        <img src="assets/fill.png" class="fill_img_scroll" alt="background image">
+                        <a class="read_now" href="#">Read Now</a>
+                        <p class="blog_title">Lorem Ipsum Dolor Sit Amet</p>
+                        <p class="blog_author">By Francine Angela Alejandro</p>
+                    </div>
+                    <div class="home_blogs">
+                        <img src="assets/fill.png" class="fill_img_scroll" alt="background image">
+                        <a class="read_now" href="#">Read Now</a>
+                        <p class="blog_title">Lorem Ipsum Dolor Sit Amet</p>
+                        <p class="blog_author">By Francine Angela Alejandro</p>
+                    </div>
+                    <div class="home_blogs">
+                        <img src="assets/fill.png" class="fill_img_scroll" alt="background image">
+                        <a class="read_now" href="#">Read Now</a>
+                        <p class="blog_title">Lorem Ipsum Dolor Sit Amet</p>
+                        <p class="blog_author">By Francine Angela Alejandro</p>
+                    </div>
+                    <div class="home_blogs">
+                        <img src="assets/fill.png" class="fill_img_scroll" alt="background image">
+                        <a class="read_now" href="#">Read Now</a>
+                        <p class="blog_title">Lorem Ipsum Dolor Sit Amet</p>
+                        <p class="blog_author">By Francine Angela Alejandro</p>
+                    </div>
+                    <div class="home_blogs">
+                        <img src="assets/fill.png" class="fill_img_scroll" alt="background image">
+                        <a class="read_now" href="#">Read Now</a>
+                        <p class="blog_title">Lorem Ipsum Dolor Sit Amet</p>
+                        <p class="blog_author">By Francine Angela Alejandro</p>
+                    </div>
+                </div>
+                    <button class="scroll_btn right" onclick="scrollRight()">
+                        <img src="assets/right.png" alt="Right Arrow" class="arrow_img">
+                    </button>
+            </div>
+        </div>
+        
+        
+        </div>
+        <div class="footer">
+            <div class="footer_l_r">
+                <div class = "footer_left">
+                    <div class="footer_logo">
+                        <p class="contact">Contact us</p>
+                        <div class="logo_wrapper">
+                            <a href="#" target="_blank"><img class="logo_foot" src="assets/facebook.png" alt="Logo_Facebook" /></a>
+                            <a href="#" target="_blank"><img class="logo_foot" src="assets/contact.png" alt="Logo_Facebook" /></a>
+                            <a href="#" target="_blank"><img class="logo_foot" src="assets/instagram.png" alt="Logo_Facebook" /></a>
+                        </div>
+                    </div>
+                    <div class="footer_nav_left">
+                        <p class="contact_us">All Categories</p>
+                        <p class="contact_us">Help</p>
+                        <p class="contact_us">Back to Top</p>
+                    </div>
+                </div>
+                <div class = "footer_right">
+                    <p class="footer_title">enTITIes</p>
+                    <div class="footer_nav_right">
+                        <p class="contact_us">Advertisement</p>
+                        <p class="contact_us">Privacy Policy</p>
+                        <p class="contact_us">Visitor Agreement</p>
+                    </div>
+            </div>
+            </div>
+
+        </div>
+    <script src="script.js"></script>
     </body>
 
 </html>

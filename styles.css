@@ -3,9 +3,21 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+html, body {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.content{
+    flex:1;
+}
+
 .body {
     background-color: white;
     font-family: 'Inria Serif', serif;
+    flex: 1;
 }
 
 .logo{
@@ -29,15 +41,16 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 1rem 2rem;
+    padding: .7rem 2rem;
 }
 
 .nav__bar {
-    position: relative;
+    position: sticky;
+    top: 0;
     z-index: 10;
     background-color: white;
     border-bottom: 0.1rem solid black;
-    width: 100;
+    width: 100%;
 }
 
 .nav__bar ul {
@@ -45,11 +58,12 @@
     display: flex;
     flex-direction: row;
     justify-content: center;
+    flex-wrap: wrap;
 }
 
 .nav__bar li {
     margin: 0.2rem;
-    padding: 0 2rem;
+    padding: 2rem 3rem;
 }
 
 .nav__bar li a {
@@ -59,16 +73,18 @@
 .nav-link.home:hover , .nav-link.about_us:hover {
     background-color: black;
     color: white;
-    padding: .5rem 2rem;
-    border-radius: 1rem;
+    padding: .5rem 1.7rem;
+    border-radius: 2rem;
+    text-align: center;
 }
 
 .nav-link.blogs:hover {
     background-color: black;
     color: white;
-    padding: .5rem 2rem;
-    border-top-left-radius: 1rem;
-    border-top-right-radius: 1rem;
+    padding: .5rem 1.7rem;
+    text-align: center;
+    border-top-left-radius: 2rem;
+    border-top-right-radius: 2rem;
 }
 
 .nav__bar a {
@@ -76,6 +92,14 @@
     color: black;
     font-size: 1.2rem; 
     padding: 1rem 2rem;
+}
+
+.nav-link.active {
+    background-color: black;
+    color: white;
+    padding: .5rem 1.7rem;
+    border-radius: 2rem;
+    text-align: center;
 }
 
 ul li ul.dropdown li {
@@ -93,9 +117,9 @@ ul li ul.dropdown {
     padding: 0;
     margin: 0;
     width: 15rem;
-    border-top-right-radius: 1rem;
-    border-bottom-left-radius: 1rem;
-    border-bottom-right-radius: 1rem;
+    border-top-right-radius: 2rem;
+    border-bottom-left-radius: 2rem;
+    border-bottom-right-radius: 2rem;
 }
 
 ul li:hover ul.dropdown {
@@ -105,7 +129,7 @@ ul li:hover ul.dropdown {
 ul li ul.dropdown a {
     color: white;
     font-size: 1rem;
-    padding: 0.3rem;
+    padding: 0.3rem 1rem 0.3rem 1.5rem;
     display: block; 
     text-decoration: none;
 }
@@ -121,20 +145,343 @@ ul li ul.dropdown li:hover {
 }
 
 ul li ul.dropdown li:last-child:hover {
-    border-bottom-left-radius: 1rem;
-    border-bottom-right-radius: 1rem;
+    border-bottom-left-radius: 2rem;
+    border-bottom-right-radius: 2rem;
 }
 
 ul li:hover > .blogs {
     background-color: black;
     color: white;
-    padding: .5rem 2rem;
-    border-top-left-radius: 1rem;
-    border-top-right-radius: 1rem;
+    padding: .5rem 1.7rem;
+    border-top-left-radius: 2rem;
+    border-top-right-radius: 2rem;
 }
 
 
-.mobile_nav_bar{
-    display: none;
+/* ============================================================================================================== */
+/* HOME-START */
+/* ============================================================================================================== */
+
+.main_content{
+    padding: 5rem 7rem;
 }
 
+.main_content h1{
+    font-size: 3rem;
+    padding-bottom: 1rem;
+    font-style: italic;
+}
+
+.fill_img {
+  width: 70%;
+  height: 70%;
+  display: block;
+}
+
+.home_main{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.home_main_text{
+    padding-left: 4rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.blog_content{
+    padding: 2rem 0;
+    font-size: 1.5rem;
+    font-style: italic;
+}
+
+.read_now_main{
+    text-decoration: none;
+    color: white;
+    background-color: black;
+    padding: .3rem;
+    width: 15%;
+    text-align: center;
+    border-radius: 2rem;
+}
+
+.other{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.other h1 {
+    font-size: 3rem;
+    padding-left: 7rem;
+}
+
+.line{
+    width: 65%;
+    color: black;
+    border-top: 0.1rem solid black;
+    margin: 1.7rem 7rem 0 auto; 
+}
+
+.fill_img_scroll{
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.home_blogs{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 2rem 1rem;
+    flex: 0 0 50%;
+    max-width: 35%;
+}
+
+.read_now{
+    text-decoration: none;
+    font-size: 1rem;
+    font-style: italic;
+    color: black;
+    background-color: white;
+    width: 30%;
+    padding: 0.4rem 0;
+    text-align: center;
+    border-radius: 3rem;
+    border: 0.1rem solid black;
+    margin: 1.5rem 0 0.5rem 0;
+}
+
+.read_now:hover{
+    background-color: black;
+    color: white
+}
+
+.blog_title{
+    font-size: 2rem;
+    width: 75%;
+}
+
+.blog_author{
+    font-size: 0.8rem;
+    width: 75%;
+}
+
+.scroll_container{
+    display: flex;      
+    align-items: center;      
+    flex-wrap: nowrap;          
+    overflow-x: auto;        
+    scroll-behavior: smooth;
+    gap: 1rem;                  
+    padding: 0.5rem; 
+    scrollbar-width: none;         
+    -ms-overflow-style: none;     
+    overflow-y: hidden;
+}
+
+.scroll_container::-webkit-scrollbar {
+    display: none;                
+}
+
+.scroll_padding{
+    padding: 0rem 7rem 5rem 7rem;
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+
+
+.scroll_wrapper{
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.scroll_btn {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 1rem;
+  z-index: 5;
+}
+
+
+
+/* ============================================================================================================== */
+/* HOME-START */
+/* ============================================================================================================== */
+
+/* ============================================================================================================== */
+/* FOOTER-START */
+/* ============================================================================================================== */
+.footer {
+    position: relative;
+    background: black;
+    bottom: 0;
+    left: 0;
+    z-index: 10;
+}
+
+.contact_us{
+    color: white;
+}
+
+.contact{
+    color: white;
+    font-size: 2rem;
+}
+
+.footer_nav_left {
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+}
+
+.footer_nav_left p{
+    padding-right: 1rem;
+}
+
+.footer_nav_right {
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+}
+
+.footer_nav_right p{
+    padding-left: 1rem;
+}
+
+.footer_title{
+    color: white;
+    text-align: right;
+    font-size: 2.5rem;
+}
+
+.footer_l_r {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 2rem;
+}
+
+.logo_wrapper{
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+}
+
+.logo_foot{
+    padding-left: 1rem;
+    margin-top: 0;
+    width: 3rem;
+    height: 2rem;
+}
+
+.footer_logo {
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+}
+
+/* ============================================================================================================== */
+/* FOOTER-END */
+/* ============================================================================================================== */
+
+
+/* ✅ RESPONSIVENESS */
+@media (max-width: 1024px) {
+    .nav__bar ul {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .nav__bar li {
+        padding: 0.5rem 2rem;
+    }
+
+    .nav__bar li a {
+        font-size: 1.3rem;
+    }
+
+    .title {
+        font-size: 1.5rem;
+    }
+
+    .subtitle {
+        font-size: 0.5rem;
+    }
+}
+
+@media (max-width: 850px) {
+    .nav__header {
+        gap: 1rem;
+    }
+
+    .nav__bar li {
+        padding: 0.5rem 1.3rem;
+    }
+
+    .nav__bar li a {
+        font-size: 1.1rem;
+    }
+
+    .title {
+        font-size: 1.3rem;
+    }
+
+    .subtitle {
+        font-size: 0.45rem;
+    }
+
+    .logo {
+        padding-left: 0;
+    }
+}
+
+@media (max-width: 750px) {
+    .nav__header {
+        gap: 1rem;
+    }
+
+    .nav__bar li {
+        padding: 0.5rem 1rem;
+    }
+
+    .nav__bar li a {
+        font-size: .8rem;
+    }
+
+    .title {
+        font-size: 1.3rem;
+    }
+
+    .subtitle {
+        font-size: 0.45rem;
+    }
+
+    .logo {
+        padding-left: 0;
+    }
+}
+
+@media (max-width: 480px) {
+    .nav__bar li {
+        padding: 0.5rem 1rem;
+    }
+
+    .nav__bar li a {
+        font-size: 1rem;
+        padding: 0.5rem 1rem;
+    }
+
+    .title {
+        font-size: 1.1rem;
+    }
+
+    .subtitle {
+        font-size: 0.4rem;
+    }
+}
