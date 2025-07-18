@@ -1,0 +1,140 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.body {
+    background-color: white;
+    font-family: 'Inria Serif', serif;
+}
+
+.logo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;     
+    gap: 0.3rem;
+    padding-left: 3rem;
+}
+
+/* LOGO */
+.title{
+    font-size: 2rem;
+}
+
+.subtitle{
+    font-size: 0.6rem;
+}
+
+.nav__header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 2rem;
+}
+
+.nav__bar {
+    position: relative;
+    z-index: 10;
+    background-color: white;
+    border-bottom: 0.1rem solid black;
+    width: 100;
+}
+
+.nav__bar ul {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.nav__bar li {
+    margin: 0.2rem;
+    padding: 0 2rem;
+}
+
+.nav__bar li a {
+    font-size: 1.7rem; 
+}
+
+.nav-link.home:hover , .nav-link.about_us:hover {
+    background-color: black;
+    color: white;
+    padding: .5rem 2rem;
+    border-radius: 1rem;
+}
+
+.nav-link.blogs:hover {
+    background-color: black;
+    color: white;
+    padding: .5rem 2rem;
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+}
+
+.nav__bar a {
+    text-decoration: none;
+    color: black;
+    font-size: 1.2rem; 
+    padding: 1rem 2rem;
+}
+
+ul li ul.dropdown li {
+    display: block;
+    border-bottom: 0.01rem solid white;
+    padding: 0;
+    margin: 0;
+}
+
+ul li ul.dropdown {
+    background-color: black;
+    position: absolute;
+    z-index: 999;
+    display: none;
+    padding: 0;
+    margin: 0;
+    width: 15rem;
+    border-top-right-radius: 1rem;
+    border-bottom-left-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+}
+
+ul li:hover ul.dropdown {
+    display: block;
+}
+
+ul li ul.dropdown a {
+    color: white;
+    font-size: 1rem;
+    padding: 0.3rem;
+    display: block; 
+    text-decoration: none;
+}
+
+ul li ul.dropdown a:hover {
+    color: black;
+}
+
+ul li ul.dropdown li:hover {
+    display: block;
+    background-color: #B9B9B9;
+    width: 15rem;
+}
+
+ul li ul.dropdown li:last-child:hover {
+    border-bottom-left-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+}
+
+ul li:hover > .blogs {
+    background-color: black;
+    color: white;
+    padding: .5rem 2rem;
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+}
+
+
+.mobile_nav_bar{
+    display: none;
+}
+
