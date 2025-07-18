@@ -173,8 +173,11 @@ ul li:hover > .blogs {
 }
 
 .fill_img {
-  width: 70%;
-  height: 70%;
+  min-width: 40rem;
+  min-height: 20rem;
+  max-width: 40rem;
+  max-height: 20rem;
+  object-fit: cover;
   display: block;
 }
 
@@ -389,6 +392,101 @@ ul li:hover > .blogs {
 /* ============================================================================================================== */
 /* FOOTER-END */
 /* ============================================================================================================== */
+/* ============================================================================================================== */
+/* ABOUT_US-START */
+/* ============================================================================================================== */
+
+.about_content{
+    padding: 5rem 7rem;
+}
+
+.about_content h1{
+    padding-bottom: 5rem;
+    font-size: 3rem;
+    text-align: center;
+    font-style: italic;
+}
+
+.about_main{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.about_main_text{
+    padding-left: 4rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.about_main_text h2{
+    font-size: 3rem;
+}
+
+.about_blog_content{
+    padding: 2rem 0;
+    font-size: 1.3rem;
+    font-style: italic;
+    word-spacing: 1rem;
+    text-align: justify;
+    line-height: 2rem;
+}
+
+.about_other{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.about_other h1 {
+    font-size: 3rem;
+    padding-left: 7rem;
+}
+
+.about_line{
+    width: 60%;
+    color: black;
+    border-top: 0.1rem solid black;
+    margin: 1.7rem 7rem 0 auto; 
+}
+
+.about_profile{
+    max-width: 100%;
+    min-width: 100%;
+    max-height: 100%;
+    min-height: 100%;
+    display: block;
+}
+
+.profile_1{
+    padding: 3rem 7rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+
+.profile h1{
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+.profile p{
+    font-size: 1rem;
+    text-align: center;
+}
+
+.profile{
+    padding: 2rem 5rem;
+}
+
+.profile_2{
+    padding: 0 7rem 7rem 7rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
 
 
 /* ✅ RESPONSIVENESS */
