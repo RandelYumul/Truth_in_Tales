@@ -180,6 +180,7 @@ ul li:hover > .blogs {
 
 
 /* NEW CODE */
+/* Blog 1 */
 .title h1, .title p {
     text-align: center;
     font-style: italic;
@@ -188,6 +189,7 @@ ul li:hover > .blogs {
 .title h1 {
     margin-top: 5%;
     font-size: 3rem;
+    margin-bottom: 1%;
 }
 
 .title p {
@@ -196,15 +198,11 @@ ul li:hover > .blogs {
     color: #B9B9B9;
 }
 
-.image-presentation {
-    margin: auto auto 4rem auto;
-    width: 100%;
+.image-presentation img {
+    max-width: 100%;
+    height: auto;
     display: block;
-    text-align: center;
-}
-
-.column{
-    flex: 1;
+    margin: auto auto 2rem auto;
 }
 
 .dropcap::first-letter{
@@ -227,14 +225,13 @@ ul li:hover > .blogs {
 }
 
 .left {
-    margin-left: 6rem;
-    margin-bottom: 3rem;
-    
+    margin-left: 6rem;  
+    margin-bottom: 2rem;
 }
 
 .right {
     margin-right: 6rem;
-    margin-bottom: 3rem;
+    margin-bottom: 2rem;
 }
 
 /* Blog 2 */
@@ -243,17 +240,23 @@ ul li:hover > .blogs {
     flex-wrap: wrap;
     flex-direction: row;
     align-items: flex-start;
-    gap:10rem;
+    gap:5rem;
     padding: 40px 20px;
     max-width: 1100px;
     margin: auto;
 }
 
+.blog2-title p{
+    margin-bottom: 10%;
+}
+
 .blog2-image img {
     width: 20rem;
     max-width: 100%;
-    height: auto;
+    height: 500px; /* may vary */
     object-fit: cover;
+    margin-top: 10%;
+    align-items: center;
 }
 
 .blog2-text-wrapper {
@@ -263,9 +266,19 @@ ul li:hover > .blogs {
 
 .blog2-content {
     text-align: justify;
+    word-spacing: 1.5px;
+    letter-spacing: 0.5px;
+}
+
+.space-margin {
+    margin-bottom: 1rem;
 }
 
 /* Blog 3 */
+.blog3-title {
+    margin-top: 2rem;
+}
+
 .blog3-content {
     display: flex;
     flex-direction: column;
@@ -300,6 +313,14 @@ ul li:hover > .blogs {
     width: 100%;
     height: auto;
     object-fit: cover;
+}
+
+.blog3-content p {
+    letter-spacing: 1.5px;
+}
+
+.mobile {
+    display: none;
 }
 
 /* ============================================================================================================== */
@@ -1306,4 +1327,39 @@ ul li:hover > .blogs {
     /* ============================================================================================================== */
     /* FOOTER-END */
     /* ============================================================================================================== */
+}
+
+/* Blog 3 Mobile Viewport */
+
+@media (max-width: 932px) {
+    .desktop {
+        display: none;
+    }
+
+    .mobile {
+        display: block
+    }
+
+    .image-mobile {
+        margin-bottom: 1.5rem;
+    }
+
+    /* For Blog 1 */
+    .blog-content {
+    display: block;
+    gap: 0;
+    text-align: justify;
+    margin: 0 5% 0 5%;
+    }
+
+    .left {
+    margin-left: 0;  
+    margin-bottom: 1rem;
+    }
+
+    .right {
+        margin-right: 0;
+        margin-bottom: 2rem;
+    }
+
 }
