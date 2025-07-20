@@ -611,6 +611,9 @@ ul li:hover > .blogs {
 
 @media (max-width: 1024px){
 
+    .body::-webkit-scrollbar {
+        display: none;                
+    }
     .home_main{
         flex-direction: column;
         justify-content: right;
@@ -679,6 +682,15 @@ ul li:hover > .blogs {
         width: 100%;
         overflow: hidden;
         margin: 0;
+    }
+
+    .scroll_btn{
+        display: none;
+    }
+
+    .scroll_wrapper{
+        padding: 0 3rem;
+        width: 100vw;
     }
 
     .fill_img_scroll{
@@ -763,6 +775,7 @@ ul li:hover > .blogs {
         flex-direction: column;
         height: 100vh;
         overflow-y: auto;
+        scrollbar-width: none; 
     }
 
     .drop_menu ul{
@@ -985,6 +998,7 @@ ul li:hover > .blogs {
             display: none;
             flex-direction: column;
             height: auto;
+            max-height: 80vh;
             width: 100vw;
             overflow-y: auto;
         }
@@ -1128,8 +1142,9 @@ ul li:hover > .blogs {
 
     .main_content h1{
         font-size: 2rem;
-        padding: 3rem 0 1rem 0;
+        padding: 3rem 0 1rem 3rem;
         font-style: italic;
+        text-align: left;
     }
 
     .fill_img {
@@ -1162,26 +1177,27 @@ ul li:hover > .blogs {
     }
 
     .read_now_main{
-        display: flex;
+        display: block;
         padding: 0.3rem;
         font-size: 0.7rem;
-        justify-content: center;
+        text-align: center;
     }
 
     .other{
         display: flex;
         flex-direction: row;
         justify-content: center;
-        
+        margin: 1rem 3rem;
     }
 
     .other h1 {
         font-size: 2rem;
-        padding: 1rem 0;
+        padding: 0;
+        width: 65%;
     }
 
     .line{
-        display: none;
+        margin-right: 0;
     }
 
     .fill_img_scroll{
@@ -1349,7 +1365,41 @@ ul li:hover > .blogs {
     /* ============================================================================================================== */
 }
 
-@media (max-width: 380px) {
+@media (max-width: 400px) {
+    /* ============================================================================================================== */
+    /* HOME-START */
+    /* ============================================================================================================== */
+    
+    .fill_img {
+        min-width: 18.5rem;
+        min-height: 10rem;
+        max-width: 18.5rem;
+        max-height: 10rem;
+        object-fit: cover;
+        display: block;
+        margin: 0;
+    }
+
+    .other{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        margin: 1rem 3rem;
+    }
+
+    .other h1 {
+        font-size: 2rem;
+        padding: 0;
+        width: 70%;
+    }
+
+    .line{
+        margin-right: 0;
+        margin-left: 0.2rem;
+    }
+    /* ============================================================================================================== */
+    /* HOME-END */
+    /* ============================================================================================================== */
     /* ============================================================================================================== */
     /* FOOTER-START */
     /* ============================================================================================================== */
@@ -1431,6 +1481,77 @@ ul li:hover > .blogs {
         justify-content: flex-start;
         gap: 0;
     }
+
+    /* ============================================================================================================== */
+    /* FOOTER-END */
+    /* ============================================================================================================== */
+}
+@media (max-width: 376px) {
+    /* ============================================================================================================== */
+    /* HAMBURGER-START */
+    /* ============================================================================================================== */
+    ul li ul.dropdown a{
+        font-size: 1rem;
+        padding: 0 2rem;
+    }
+    /* ============================================================================================================== */
+    /* HAMBURGER-END */
+    /* ============================================================================================================== */
+    /* ============================================================================================================== */
+    /* HOME-START */
+    /* ============================================================================================================== */
+    
+    .fill_img {
+        min-width: 18rem;
+        min-height: 10rem;
+        max-width: 18rem;
+        max-height: 10rem;
+        object-fit: cover;
+        display: block;
+        margin: 0;
+    }
+
+    .other{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        margin: 1rem 3rem;
+    }
+
+    .other h1 {
+        font-size: 2rem;
+        padding: 0;
+        width: 90%;
+
+    }
+
+    .scroll_container{
+        gap: 0.5rem;                  
+    }
+
+    .line{
+        margin-right: 0;
+        margin-left: 0.2rem;
+    }
+    /* ============================================================================================================== */
+    /* HOME-END */
+    /* ============================================================================================================== */
+    /* ============================================================================================================== */
+    /* FOOTER-START */
+    /* ============================================================================================================== */
+    .footer {
+        padding: 1.3rem;
+    }
+
+
+    .footer_nav_right {
+        text-align: right;
+    }
+
+    .contact{
+        width: 6.5rem;
+    }
+
 
     /* ============================================================================================================== */
     /* FOOTER-END */
