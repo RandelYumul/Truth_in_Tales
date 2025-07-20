@@ -421,7 +421,7 @@ ul li:hover > .blogs {
 /* ============================================================================================================== */
 
 .about_content{
-    margin: 7%;
+    margin: 5% 7%;
 }
 
 .about_fill_img {
@@ -434,7 +434,7 @@ ul li:hover > .blogs {
 }
 
 .about_content h1{
-    margin-bottom: 5rem;
+    margin-bottom: clamp(0.5rem, 10vh, 6rem);
     font-size: clamp(20%, 5vw, 300%);
     text-align: center;
     font-style: italic;
@@ -510,11 +510,13 @@ ul li:hover > .blogs {
 .profile h1{
     font-size: clamp(0.3rem, 2vw, 1.5rem);
     text-align: center;
+    margin-top: clamp(0.3rem, 3vw, 2rem);
 }
 
 .profile p{
     font-size: clamp(0.3rem, 2vw, 1rem);
     text-align: center;
+    margin-top: clamp(0.3rem, 3vw, 2rem);
 }
 
 .profile{
@@ -904,13 +906,20 @@ ul li:hover > .blogs {
     /* ABOUT-US-START */
     /* ============================================================================================================== */
 
+    .about_content{
+        margin-top: 5rem;
+    }
+
+    .about_content h1{
+        margin-bottom: clamp(0.5rem, 6vh, 6rem);
+    }
+
     .about_fill_img {
         min-width: 30rem;
         min-height: 15rem;
         max-width: 30rem;
         max-height: 18rem;
     }
-
 
     .about_main_text{
         padding-left: 2rem;
@@ -926,7 +935,7 @@ ul li:hover > .blogs {
     .whole_profile_ipad{
         display: flex;
         flex-direction: column;
-        margin: 5rem;
+        margin: 2rem;
     }
     .whole_profile{
         display: none;
@@ -977,10 +986,6 @@ ul li:hover > .blogs {
     .whole_profile_ipad{
         display: flex;
         flex-direction: column;
-        margin: 5rem;
-    }
-    .whole_profile{
-        display: none;
     }
 
     /* ============================================================================================================== */
@@ -1011,14 +1016,6 @@ ul li:hover > .blogs {
         font-size: 0.9rem;
         word-spacing: 0.2rem;
         line-height: 1.2rem;
-    }
-    .whole_profile_ipad{
-        display: flex;
-        flex-direction: column;
-        margin: 5rem;
-    }
-    .whole_profile{
-        display: none;
     }
 
     /* ============================================================================================================== */
@@ -1051,11 +1048,7 @@ ul li:hover > .blogs {
         word-spacing: 0.2rem;
         line-height: 1.1rem;
     }
-    .whole_profile_ipad{
-        display: flex;
-        flex-direction: column;
-        margin: 5rem;
-    }
+
     .whole_profile{
         display: none;
     }
@@ -1149,7 +1142,9 @@ ul li:hover > .blogs {
     /* ============================================================================================================== */
     /* ABOUT-US-START */
     /* ============================================================================================================== */
-
+    .about_content{
+        margin-top: 3rem;
+    }
     .about_main{
         display: flex;
         flex-direction: column;
@@ -1163,9 +1158,9 @@ ul li:hover > .blogs {
         max-height: 18rem;
     }
 
-    .about_content h1{
+    /* .about_content h1{
         margin-bottom: 3rem;
-    }
+    } */
 
     .about_main_text{
         padding-left: 0;
@@ -1173,7 +1168,8 @@ ul li:hover > .blogs {
     }
 
     .about_main_text h2{
-        margin-top: 3rem;
+        margin-top: 2rem;
+        margin-bottom: 1rem;
     }
 
     .about_blog_content{
@@ -1186,7 +1182,7 @@ ul li:hover > .blogs {
     .whole_profile_ipad{
         display: flex;
         flex-direction: column;
-        margin: 2rem 5rem;
+        margin: 1rem 5rem 2rem 5rem;
     }
 
     .whole_profile{
