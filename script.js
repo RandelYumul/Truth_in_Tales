@@ -50,6 +50,21 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 });
 
+document.addEventListener("DOMContentLoaded", () => {
+  const blogLink = document.querySelector(".nav-link.blogs");
+  const dropdown = blogLink.nextElementSibling;
+
+  blogLink.parentElement.addEventListener("mouseenter", () => {
+    dropdown.classList.add("show");
+    blogLink.innerHTML = "Blogs ▴";
+  });
+
+  blogLink.parentElement.addEventListener("mouseleave", () => {
+    dropdown.classList.remove("show");
+    blogLink.innerHTML = "Blogs ▾";
+  });
+});
+
 document.addEventListener("DOMContentLoaded", function () {
     const menuToggle = document.getElementById("menu-toggle");
     const contentFooter = document.querySelector(".content_footer");
