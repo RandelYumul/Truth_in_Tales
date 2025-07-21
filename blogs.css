@@ -310,6 +310,7 @@ ul li:hover > .blogs {
     text-align: right;
     font-style: italic;
     margin-top: 25.1%;
+    font-weight: bold;
 }
 
 .column .second-pic {
@@ -441,6 +442,7 @@ ul li:hover > .blogs {
     text-align: right;
     font-style: italic;
     margin-top: 28%;
+    font-weight: bold;
 }
 
 a {
@@ -480,6 +482,7 @@ img .togo {
     text-align: right;
     font-style: italic;
     margin-top: 59.3%;
+    font-weight: bold;
 }
 
 .tablet {
