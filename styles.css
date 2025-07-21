@@ -35,7 +35,6 @@ a{
 /* ============================================================================================================== */
 .title{
     font-size: 2rem;
-    font-weight: normal;
 }
 
 .subtitle{
@@ -96,7 +95,6 @@ a{
     text-align: center;
     border-top-left-radius: 2rem;
     border-top-right-radius: 2rem;
-    cursor: default;
 }
 
 .nav__bar a {
@@ -112,17 +110,6 @@ a{
     padding: .5rem 1.7rem;
     border-radius: 2rem;
     text-align: center;
-    cursor: default;
-}
-
-.nav-link.active_blog {
-    background-color: black;
-    color: white;
-    padding: .5rem 1.7rem;
-    border-top-left-radius: 2rem;
-    border-top-right-radius: 2rem;
-    text-align: center;
-    cursor: default;
 }
 
 ul li ul.dropdown li {
@@ -152,9 +139,9 @@ ul li:hover ul.dropdown {
 ul li ul.dropdown a {
     color: white;
     font-size: 1rem;
+    padding: 0.3rem 1rem 0.3rem 1.5rem;
     display: block; 
     text-decoration: none;
-    padding: 0.5rem;
 }
 
 ul li ul.dropdown a:hover {
@@ -272,7 +259,7 @@ ul li:hover > .blogs {
     object-fit: cover;
 }
 
-.fill_img_scroll.shane, .fill_img_scroll.randel{
+.fill_img_scroll.shane{
     object-position: 50% 87%;
 }
 
@@ -723,13 +710,12 @@ ul li:hover > .blogs {
         text-align: left;
     }
 
-    .nav-link.active, .nav-link.active_blog  {
+    .nav-link.active {
         background-color: transparent;
         color: white;
         border-radius: 0;
         text-align: left;
     }
-    
 
     .nav-link.home:hover , .nav-link.about_us:hover {
         background-color: transparent;
@@ -764,7 +750,6 @@ ul li:hover > .blogs {
         display: flex;
         position: relative;
         margin: 0;
-        width: 20rem;
     }
 
     ul li ul.dropdown {
@@ -785,12 +770,14 @@ ul li:hover > .blogs {
 
     ul li ul.dropdown a {
         color: white;
-        font-size: 1.5rem;
+        font-size: 1rem;
+        padding: 0.5rem 1rem;
         display: block;
-        text-decoration: none; 
+        text-decoration: none;
+        width: 20rem; 
         box-sizing: border-box; 
         background-color: transparent; 
-        line-height: 2rem;
+        line-height: 2.5rem;
         white-space: normal;
         word-break: break-word;
         overflow-wrap: break-word;
@@ -799,8 +786,7 @@ ul li:hover > .blogs {
 
     ul li ul.dropdown li:hover {
         background-color: transparent;  
-        padding: 0;
-        width: 20rem;       
+        padding: 0;       
         cursor: pointer;     
     }
 
@@ -818,14 +804,6 @@ ul li:hover > .blogs {
     .dropdown.show {
         display: flex !important;
     }
-
-    .nav__bar{
-        display: none;
-    }
-
-    .nav__bar.mobile{
-        display: flex;
-    }
     /* ============================================================================================================== */
     /* HAMBURGER-END */
     /* ============================================================================================================== */
@@ -840,6 +818,14 @@ ul li:hover > .blogs {
         flex-direction: column;
         justify-content: right;
         padding: 0;
+    }
+
+    .nav__bar{
+        display: none;
+    }
+
+    .nav__bar.mobile{
+        display: flex;
     }
 
     .main_content h1{
@@ -984,24 +970,13 @@ ul li:hover > .blogs {
     .line{
         width: 47%;
     }
-    /* ============================================================================================================== */
-    /* HAMBURGER */
-    /* ============================================================================================================== */
-
     .drop_menu li a {       
         font-size: 2rem;
     }
     ul li ul.dropdown a {
         font-size: 1.5rem;
-    }
-
-    ul li ul.dropdown li, ul li ul.dropdown li:hover{
         width: 18rem;
     }
-
-    /* ============================================================================================================== */
-    /* HAMBURGER-END */
-    /* ============================================================================================================== */
     .main_content h1, .home_main_text{
         padding-left: 9rem;
     }
@@ -1090,18 +1065,6 @@ ul li:hover > .blogs {
     .home_main_text{
         padding: 0 5rem;
     }
-
-    /* ============================================================================================================== */
-    /* HAMBURGER-START */
-    /* ============================================================================================================== */
-    ul li ul.dropdown a {
-        font-size: 1rem;
-        line-height: 1.5rem;
-    }
-    /* ============================================================================================================== */
-    /* HAMBURGER-END */
-    /* ============================================================================================================== */
-
     /* ============================================================================================================== */
     /* ABOUT-US-START */
     /* ============================================================================================================== */
@@ -1392,7 +1355,7 @@ ul li:hover > .blogs {
             padding: 1rem 0;
         }
 
-        .nav-link.active, .nav-link.active_blog{
+        .nav-link.active {
             background-color: transparent;
             color: white;
             border-radius: 0;
@@ -1456,24 +1419,25 @@ ul li:hover > .blogs {
         ul li ul.dropdown a {
             color: white;
             font-size: 1rem;
-            padding: 0;
-            margin: 1rem;
+            padding: 1rem 0;
             display: block;
             text-decoration: none;
+            text-align: center;
+            width: 100vw; 
             box-sizing: border-box; 
             background-color: transparent; 
-            line-height: 1.5rem;
+            line-height: 2.5rem;
             white-space: normal;
             word-break: break-word;
             overflow-wrap: break-word;
-            text-align: center;
         }
 
-        ul li ul.dropdown li, ul li ul.dropdown li:hover{
-            width: 100%;
-            justify-content: center;
-        }
 
+        ul li ul.dropdown li:hover {
+            background-color: transparent;  
+            padding: 0;       
+            cursor: pointer;     
+        }
 
         ul li ul.dropdown a:hover {
             color: black;

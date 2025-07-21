@@ -250,29 +250,37 @@ ul li:hover > .blogs {
 /* BLOG 2 & 3 / PASCUA */
 /* ============================================================================================================== */
 
-.blog2-container {
+.ninsblog {
+    display: flex;
+    gap: 3rem;
+    align-items: flex-start;
+}
+
+.blog2-container, .new-style {
     max-width: 1100px;
     margin: 0 auto;
     padding: 2rem;
 }
 
-.blog3 .nins-image img{
+.column .title {
+    margin-bottom: 2%;
+}
+
+.ninsblog .nins-image img{
     margin-top: 7%;
     height: 870px;
     max-width: 110%;
+    display: block;
 }
 
 .column .blog3-title p {
-    margin-bottom: 4%;
     font-size: 1rem;
     color: #B9B9B9;
     text-align: center;
 }
 
-.new-style {
-    max-width: 1100px;
-    margin: 0 auto;
-    padding: 0 2rem;
+.blog2-container p:last-child, .new-style p:last-child {
+    margin-bottom: 0;
 }
 
 .new-style p {
@@ -280,10 +288,66 @@ ul li:hover > .blogs {
     line-height: 2.5rem;
     font-size: 1.5rem;
     margin-bottom: 5%;
-    
 }
 
+.ninsblog .published {
+    display: block;
+    text-align: right;
+    font-style: italic;
+    margin-top: 44%;
+}
 
+.column .second-pic {
+    margin-bottom: 5%;
+}
+
+.blog2-container .blog3 .first-column {
+    width: 45%;
+}
+
+.references .ninsblog .blog3-column p{
+    font-size: 1rem;
+}
+
+.references .ninsblog {
+    display: flex;
+    gap: 2rem;
+    align-items: flex-start;
+    max-width: 1100px;
+    margin: 2rem auto;
+}
+
+.references {
+    margin-top: 2%;
+}
+
+.references .column {
+    flex: 1;
+}
+
+.references .blog3-first-column {
+    flex: 0 0 30%;
+    max-width: 500px;
+    padding-right: 1.5rem;
+}
+
+.references .ninsblog p {
+    margin: 0;
+}
+
+.references .ninsblog .column .ref-title {
+    font-size: 1.2rem;
+
+}
+
+.references .ninsblog .column .ref-qoute {
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.references .ninsblog .column .ref-author {
+    font-style: italic;
+}
 /* ============================================================================================================== */
 /* BLOG 3 / YONA */
 /* ============================================================================================================== */
@@ -296,7 +360,6 @@ ul li:hover > .blogs {
 }
 
 .blog3 {
-    margin-top: 6%;
     display: flex;
     gap: 3rem;
     align-items: flex-start;
@@ -317,7 +380,6 @@ ul li:hover > .blogs {
     font-style: italic;
     color: #B9B9B9;
     line-height: 1.1rem;
-    
 }
 
 .column {
@@ -362,7 +424,7 @@ ul li:hover > .blogs {
     display: block;
     text-align: right;
     font-style: italic;
-    margin-top: 36%;
+    margin-top: 28%;
 }
 
 a {
@@ -370,19 +432,13 @@ a {
     color: black;
 }
 
-a:visited {
+a:visited, a:hover, a:active {
     text-decoration: underline;
     color: black;
 }
 
-a:hover {
-    text-decoration: underline;
-    color: black;
-}
-
-a:active {
-    text-decoration: underline;
-    color: black;
+.mobile {
+    display: none;
 }
 
 
@@ -1933,12 +1989,31 @@ a:active {
     /* ============================================================================================================== */
 }
 
+/* ============================================================================================================== */
+/* BLOG VIEWPOINT */
+/* ============================================================================================================== */
 
-/* Blog Mobile Viewport */
 
 @media (max-width: 1024px) {
     .blog3 {
         gap: 2rem;
+    }
+}
+
+/* ============================================================================================================== */
+/* NINS BLOG */
+/* ============================================================================================================== */
+
+
+@media (max-width: 900px) {
+    .blog2-container .blog3 .column .nins-image img {
+        height: 1100px;
+    }
+}
+
+@media (max-width: 780px) {
+    .blog2-container .blog3 .column .nins-image img {
+        height: 1200px;
     }
 }
 
@@ -1984,7 +2059,7 @@ a:active {
         max-width: 100%;
     }
 
-    .blog3 p {
+    .blog3 p, .space-top .new-style p {
         line-height: 2rem;
         font-size: 1rem;
     }
@@ -2014,4 +2089,19 @@ a:active {
     .blog3-second .published {
         margin-top: 27%;
     }
+
+    /* ============================================================================================================== */
+    /* NINS BLOG */
+    /* ============================================================================================================== */
+
+    .blog2-container .blog3 .column .nins-image img {
+        height: 500px;
+        margin-bottom: 5%;
+    }
+
+    .blog2-container .ninsblog .column .published {
+        margin-top: 25%;
+    }
+
+
 }
