@@ -313,12 +313,17 @@ ul li:hover > .blogs {
 }
 
 .column .second-pic {
+    margin-top: 3%;
     margin-bottom: 5%;
     max-width: 100%;
     height: auto;
     display: block;
     margin-left: auto;
     margin-right: auto;
+}
+
+.column .space-margin {
+    margin-top: 4.4%;
 }
 
 .blog2-container .blog3 .first-column {
@@ -2118,5 +2123,15 @@ a:visited, a:hover, a:active {
         margin-top: 25%;
     }
 
+    .new-style p{
+        margin-bottom: 10%;
+    }
 
+    .mobile .nins-citation {
+        margin-bottom: 7%;
+    }
+
+    .column .space-margin {
+    margin-top: 0;
+    }
 }
