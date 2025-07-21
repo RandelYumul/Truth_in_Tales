@@ -457,6 +457,34 @@ a:visited, a:hover, a:active {
     display: none;
 }
 
+/* ============================================================================================================== */
+/* BLOG 3 / SHANE */
+/* ============================================================================================================== */
+
+hr {
+    margin-bottom: 3%;
+}
+
+.blog3-first .new-size img {
+    max-width: 100%;
+}
+
+img .togo {
+    max-width: 100%;
+    margin: 0 auto;
+    display: block;
+}
+
+.blog3-second .shane-published {
+    display: block;
+    text-align: right;
+    font-style: italic;
+    margin-top: 59.3%;
+}
+
+.tablet {
+        display: none;
+}
 
 /* ============================================================================================================== */
 /* FOOTER-START */
@@ -2025,6 +2053,19 @@ a:visited, a:hover, a:active {
     .blog2-container .blog3 .column .nins-image img {
         height: 1100px;
     }
+
+    /* ============================================================================================================== */
+    /* NINS BLOG */
+    /* ============================================================================================================== */
+
+    .blog3 .shane-published {
+        margin-top: 20%;
+    }
+
+    .tablet {
+        display: block;
+    }
+    
 }
 
 @media (max-width: 780px) {
@@ -2134,4 +2175,9 @@ a:visited, a:hover, a:active {
     .column .space-margin {
     margin-top: 0;
     }
+
+    .tablet {
+        display: none;
+    }
+    
 }
