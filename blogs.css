@@ -1,4 +1,3 @@
-/* Code ni Randel */
 * {
     margin: 0;
     padding: 0;
@@ -6,9 +5,11 @@
 }
 
 html, body {
-  height: 100vh;
-  display: flex;
-  flex-direction: column;
+  height: 100%;
+}
+
+a{
+    text-decoration: none;
 }
 
 .content{
@@ -29,20 +30,15 @@ html, body {
     padding-left: 3rem;
 }
 
-/* LOGO */
-.title{
-    font-size: 2rem;
-}
-
-.subtitle{
-    font-size: 0.6rem;
-}
-
 /* ============================================================================================================== */
 /* NAVIGATION-START */
 /* ============================================================================================================== */
-.title{
-    font-size: 2rem;
+.title h1{
+    font-size: 3.5rem;
+}
+
+.title p {
+    font-size: 1.25rem;
 }
 
 .subtitle{
@@ -64,6 +60,7 @@ html, body {
     background-color: white;
     border-bottom: 0.1rem solid black;
     width: 100%;
+    box-shadow: 0 0.3rem 0.5rem rgba(0, 0, 0, 0.2);
 }
 
 .nav__bar.mobile{
@@ -274,53 +271,88 @@ ul li:hover > .blogs {
     margin-bottom: 1rem;
 }
 
-/* Blog 3 */
-.blog3-title {
-    margin-top: 2rem;
-}
-
-.blog3-content {
-    display: flex;
-    flex-direction: column;
-    gap: 2rem;
-    padding: 2rem;
-    max-width: 1100px;
-    margin: auto;
-}
-
-.blog3-row {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 2rem;
-    align-items: center;
-    justify-content: space-between;
-}
-
-.blog3-row.reverse {
-    flex-direction: row;
-}
-
-.blog3-text, .blog3-image {
-    flex: 1 1 45%;
-    min-width: 300px;
-}
-
-.blog3-text {
-    text-align: justify;
-}
-
-.blog3-image img {
-    width: 100%;
-    height: auto;
-    object-fit: cover;
-}
-
-.blog3-content p {
-    letter-spacing: 1.5px;
-}
-
 .mobile {
     display: none;
+}
+
+/* ============================================================================================================== */
+/* BLOG 3 */
+/* ============================================================================================================== */
+
+.blog3-container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 2rem;
+    margin-bottom: 3%;
+}
+
+.blog3 {
+    margin-top: 6%;
+    display: flex;
+    gap: 3rem;
+    align-items: flex-start;
+    
+}
+
+.blog3 p {
+    text-align: justify;
+    line-height: 2.5rem;
+    font-size: 1.5rem;
+    margin-bottom: 7%;
+}
+
+.blog3 .citation {
+    margin-top: 0;
+    display: block;
+    font-size: 0.70rem;
+    font-style: italic;
+    color: #B9B9B9;
+    
+}
+
+.column {
+    flex: 1;
+}
+
+.blog3-first {
+    width: 47%;
+}
+
+.blog3-image {
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.column img {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover;
+    margin-bottom: 0;
+}
+
+.blog3-first::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.blog3-first .blog3-image img {
+    max-width: 50%;
+    margin-left: 0;
+    margin-right: auto;
+}
+
+.column:last-child .blog3-image img {
+    width: 100%;
+    max-width: 100%;
+}
+
+.blog3-second .published {
+    display: block;
+    text-align: right;
+    font-style: italic;
+    margin-top: 44%;
 }
 
 /* ============================================================================================================== */
@@ -415,19 +447,7 @@ ul li:hover > .blogs {
     }
 }
 
-@media (max-width: 1420px) {
-    .read_now_main{
-        width: 30%;
-    }
-    .other h1{
-        font-size: 2.6rem;
-    }
-}
-
 @media (max-width: 1350px) {
-    .read_now_main{
-        width: 30%;
-    }
     .read_now{
         width: 50%;
     }
@@ -435,18 +455,9 @@ ul li:hover > .blogs {
         width: 90%;
         font-size: 2rem;
     }
-    .other h1{
-        font-size: 2.7rem;
-    }
-    .line{
-        width: 60%;
-    }
 }
 
 @media (max-width: 1250px) {
-    .read_now_main{
-        width: 30%;
-    }
 
     .read_now{
         width: 50%;
@@ -457,18 +468,11 @@ ul li:hover > .blogs {
     }
     
     .fill_img {
-        min-width: 30rem;
-        min-height: 15rem;
-        max-width: 30rem;
-        max-height: 15rem;
-        object-fit: cover;
-        display: block;
+        max-width: 43rem;
+        max-height: 30rem;
     }
 }
 @media (max-width: 1190px) {
-    .read_now_main{
-        width: 30%;
-    }
 
     .read_now{
         width: 50%;
@@ -485,10 +489,6 @@ ul li:hover > .blogs {
     }
 }
 @media (max-width: 1090px) {
-    .read_now_main{
-        width: 30%;
-    }
-
     .read_now{
         width: 50%;
     }
@@ -506,107 +506,9 @@ ul li:hover > .blogs {
 
 
 @media (max-width: 1024px){
-
-    .home_main{
-        flex-direction: column;
-        justify-content: right;
-        padding: 0;
-    }
-
-    .nav__bar{
-        display: none;
-    }
-
-    .nav__bar.mobile{
-        display: flex;
-    }
-
-    .main_content h1{
-        text-align: left;
-        padding: 4rem 0 0 11rem;
-    }
-
-    .main_content{
-        padding: 0;
-        width: 100%;
-    }
-
-    .image-wrapper {
-        display: flex;
-        justify-content: center; 
-        align-items: center;            
-    }
-
-    .fill_img {
-        border: 1px solid black;
-        margin: 2rem 0;
-        height: auto;
-    }
-
-    .home_main_text{
-        padding: 0 11rem;
-    }
-
-    .blog_content{
-        font-size: 1.4rem;
-        padding-bottom: 7rem;
-    }
-
-    .home_main_text h2{
-        font-size: 2rem;
-    }
-
-    .read_now_main{
-        display: none;
-    }
-
-    .other h1{
-        font-size: 2rem;
-    }
-
-    .line{
-        width: 59%;
-        margin: 1.5rem 7rem 0 auto; 
-    }
-
-    .scroll_padding{
-        padding: 3rem 0rem;
-        position: relative;
-        width: 100%;
-        overflow: hidden;
-        margin: 0;
-    }
-
-    .fill_img_scroll{
-        min-width: 20rem;
-        max-width: 20rem;
-        min-height: 12rem;
-        max-height: 12rem;
-        display: relative;
-    }
-
-    .home_blogs{
-        margin: 0 1rem;
-    }
-    
-    .read_now{
-        max-width: 50%;
-        min-width: 50%;
-    }
-
-    .blog_title{
-        font-size: 1.8rem;
-        max-width: 80%;
-        min-width: 80%;
-    }
-
-    .drop_menu{
-        display: none;
-    }
-
-/* ============================================================================================================== */
-/* HAMBURGER */
-/* ============================================================================================================== */
+    /* ============================================================================================================== */
+    /* HAMBURGER */
+    /* ============================================================================================================== */
     .hamburger{
         font-size: 4rem;
         margin-top: 0;
@@ -659,6 +561,7 @@ ul li:hover > .blogs {
         flex-direction: column;
         height: 100vh;
         overflow-y: auto;
+        scrollbar-width: none; 
     }
 
     .drop_menu ul{
@@ -785,6 +688,165 @@ ul li:hover > .blogs {
     .dropdown.show {
         display: flex !important;
     }
+    /* ============================================================================================================== */
+    /* HAMBURGER-END */
+    /* ============================================================================================================== */
+    /* ============================================================================================================== */
+    /* HOME-START */
+    /* ============================================================================================================== */
+
+    .body::-webkit-scrollbar {
+        display: none;                
+    }
+    .home_main{
+        flex-direction: column;
+        justify-content: right;
+        padding: 0;
+    }
+
+    .nav__bar{
+        display: none;
+    }
+
+    .nav__bar.mobile{
+        display: flex;
+    }
+
+    .main_content h1{
+        text-align: left;
+        padding: 4rem 0 0 11rem;
+    }
+
+    .main_content{
+        padding: 0;
+        width: 100%;
+    }
+
+    .image-wrapper {
+        display: flex;
+        justify-content: center; 
+        align-items: center;    
+    }
+
+    .fill_img {
+        border: 1px solid black;
+        margin: 2rem 0;
+    }
+
+    .home_main_text{
+        padding: 0 11rem;
+    }
+
+    .blog_content{
+        font-size: 1.4rem;
+    }
+
+    .read_now_main{
+        margin-bottom: 7rem;
+    }
+
+    .home_main_text h2{
+        font-size: 2rem;
+    }
+
+    .scroll_padding{
+        padding: 3rem 0rem;
+        position: relative;
+        width: 100%;
+        overflow: hidden;
+        margin: 0;
+    }
+
+    .scroll_btn{
+        display: none;
+    }
+
+    .scroll_wrapper{
+        padding: 0 3rem;
+        width: 100vw;
+    }
+
+    .fill_img_scroll{
+        min-width: 20rem;
+        max-width: 20rem;
+        min-height: 12rem;
+        max-height: 12rem;
+        display: relative;
+    }
+
+    .home_blogs{
+        margin: 0 1rem;
+    }
+    
+    .read_now{
+        max-width: 50%;
+        min-width: 50%;
+    }
+
+    .blog_title{
+        font-size: 1.8rem;
+        max-width: 80%;
+        min-width: 80%;
+    }
+
+    .drop_menu{
+        display: none;
+    }
+    /* ============================================================================================================== */
+    /* HOME-END */
+    /* ============================================================================================================== */
+    /* ============================================================================================================== */
+    /* ABOUT-US-START */
+    /* ============================================================================================================== */
+
+    .about_profile{
+            max-width: 17rem;
+            min-width: 10%;
+            max-height: auto;
+            min-height: auto;
+            aspect-ratio: 1/1;
+            display: block;
+            object-fit: cover;
+    }
+
+    .about_content{
+        margin-top: 5rem;
+    }
+
+    .about_content h1{
+        margin-bottom: clamp(0.5rem, 6vh, 6rem);
+    }
+
+    .about_fill_img {
+        min-width: 30rem;
+        min-height: 15rem;
+        max-width: 30rem;
+        max-height: 18rem;
+    }
+
+    .about_main_text{
+        padding-left: 2rem;
+    }
+
+
+    .about_blog_content{
+        padding-top: 0.5rem;
+        font-size: 1.2rem;
+        word-spacing: 0.2rem;
+        line-height: 1.5rem;
+    }
+    .whole_profile_ipad{
+        display: flex;
+        flex-direction: column;
+        margin: 2rem;
+    }
+    .whole_profile{
+        display: none;
+    }
+
+    /* ============================================================================================================== */
+    /* ABOUT-US-END */
+    /* ============================================================================================================== */
 }
 
 
@@ -799,22 +861,121 @@ ul li:hover > .blogs {
         font-size: 1.5rem;
         width: 18rem;
     }
-    .main_content h1{
-        text-align: center;
-        padding: 5rem 0 2rem 0;
+    .main_content h1, .home_main_text{
+        padding-left: 9rem;
     }
-    .home_main_text{
-        text-align: center;
+    /* ============================================================================================================== */
+    /* ABOUT-US-START */
+    /* ============================================================================================================== */
+
+    .about_fill_img {
+        min-width: 23rem;
+        min-height: 10rem;
+        max-width: 25rem;
+        max-height: 13rem;
     }
+
+
+    .about_main_text{
+        padding-left: 2rem;
+    }
+
+    .about_blog_content{
+        padding-top: 0.5rem;
+        font-size: 1rem;
+        word-spacing: 0.2rem;
+        line-height: 1.3rem;
+    }
+    .whole_profile_ipad{
+        display: flex;
+        flex-direction: column;
+    }
+
+    /* ============================================================================================================== */
+    /* ABOUT-US-END */
+    /* ============================================================================================================== */
 }
 
 @media (max-width: 830px) {
     .blog_title{
         font-size: 1.7rem;
     }
+
+    .fill_img {
+        max-width: 35rem;
+        min-width: 35rem;
+        max-height: 20rem;
+        min-height: 20rem;
+    }
+    /* ============================================================================================================== */
+    /* ABOUT-US-START */
+    /* ============================================================================================================== */
+    .about_fill_img {
+        min-width: 23rem;
+        min-height: 10rem;
+        max-width: 25rem;
+        max-height: 13rem;
+    }
+
+    .about_main_text{
+        padding-left: 2rem;
+    }
+
+    .about_blog_content{
+        padding-top: 0.5rem;
+        font-size: 0.9rem;
+        word-spacing: 0.2rem;
+        line-height: 1.2rem;
+    }
+
+    /* ============================================================================================================== */
+    /* ABOUT-US-END */
+    /* ============================================================================================================== */
 }
 
-@media (max-width: 750px){
+@media (max-width: 770px){
+    .fill_img {
+        max-width: 35rem;
+        min-width: 35rem;
+        max-height: 20rem;
+        min-height: 20rem;
+    }
+
+    .read_now_main{
+        width: 40%;
+        margin-bottom: 5rem;
+    }
+
+    .home_main_text{
+        padding: 0 5rem;
+    }
+    /* ============================================================================================================== */
+    /* ABOUT-US-START */
+    /* ============================================================================================================== */
+
+    .about_profile{
+            max-width: 15rem;
+            min-width: 10%;
+            max-height: auto;
+            min-height: auto;
+            aspect-ratio: 1/1;
+            display: block;
+            object-fit: cover;
+    }
+    .about_blog_content{
+        padding-top: 0.5rem;
+        font-size: 0.8rem;
+        word-spacing: 0.2rem;
+        line-height: 1.1rem;
+    }
+
+    .whole_profile{
+        display: none;
+    }
+
+    /* ============================================================================================================== */
+    /* ABOUT-US-END */
+    /* ============================================================================================================== */
     /* ============================================================================================================== */
     /* FOOTER-START */
     /* ============================================================================================================== */
@@ -898,35 +1059,87 @@ ul li:hover > .blogs {
     /* ============================================================================================================== */
     /* FOOTER-END */
     /* ============================================================================================================== */
+    /* ============================================================================================================== */
+    /* ABOUT-US-START */
+    /* ============================================================================================================== */
+    .about_content{
+        margin-top: 3rem;
+    }
+    .about_main{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .about_fill_img {
+        min-width: 2rem;
+        min-height: 15rem;
+        max-width: 50rem;
+        max-height: 18rem;
+    }
+
+    /* .about_content h1{
+        margin-bottom: 3rem;
+    } */
+
+    .about_main_text{
+        padding-left: 0;
+        text-align: center;
+    }
+
+    .about_main_text h2{
+        margin-top: 2rem;
+        margin-bottom: 1rem;
+    }
+
+    .about_blog_content{
+        padding-top: 0.5rem;
+        font-size: 1.2rem;
+        word-spacing: 0.2rem;
+        line-height: 1.5rem;
+    }
+
+    .whole_profile_ipad{
+        display: flex;
+        flex-direction: column;
+        margin: 1rem 5rem 2rem 5rem;
+    }
+
+    .whole_profile{
+        display: none;
+    }
+
+    .profile_1, .profile_2, .profile_3{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        height: auto;
+    }
+
+    .profile h1{
+        font-size: clamp(0.3rem, 4vw, 3rem);
+        text-align: center;
+    }
+
+    .profile p{
+        font-size: clamp(0.3rem, 3vw, 1rem);
+        text-align: center;
+    }
+
+    /* ============================================================================================================== */
+    /* ABOUT-US-END */
+    /* ============================================================================================================== */
 }
-@media (max-width: 540px){
-    /* ============================================================================================================== */
-    /* FOOTER-START */
-    /* ============================================================================================================== */
 
-    .contact{
-        font-size: 1.3rem;
+@media (max-width: 690px){
+    .fill_img {
+        max-width: 30rem;
+        min-width: 30rem;
     }
-
-    .footer_nav_left {
-        font-size: 0.5rem;
-    }
-
-    .footer_nav_right {
-        font-size: 0.5rem;
-    }
-
-
-    .footer_title{
-        font-size: 1.3rem;
-    }
-
-    /* ============================================================================================================== */
-    /* FOOTER-END */
-    /* ============================================================================================================== */
 }
 
-@media (max-width: 480px) {
+
+@media (max-width: 541px) {
     /* ============================================================================================================== */
     /* HAMBURGER-START */
     /* ============================================================================================================== */
@@ -989,6 +1202,7 @@ ul li:hover > .blogs {
             display: none;
             flex-direction: column;
             height: auto;
+            max-height: 80vh;
             width: 100vw;
             overflow-y: auto;
         }
@@ -1132,18 +1346,16 @@ ul li:hover > .blogs {
 
     .main_content h1{
         font-size: 2rem;
-        padding: 3rem 0 1rem 0;
+        padding: 3rem 0 1rem 3rem;
         font-style: italic;
+        text-align: left;
     }
 
     .fill_img {
-        min-width: 20rem;
-        min-height: 10rem;
         max-width: 20rem;
+        min-width: 20rem;
         max-height: 10rem;
-        object-fit: cover;
-        display: block;
-        margin: 0;
+        min-height: 10rem;
     }
 
     .home_main_text{
@@ -1166,33 +1378,18 @@ ul li:hover > .blogs {
     }
 
     .read_now_main{
-        display: flex;
+        display: block;
         padding: 0.3rem;
         font-size: 0.7rem;
-        justify-content: center;
-    }
-
-    .other{
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        
-    }
-
-    .other h1 {
-        font-size: 2rem;
-        padding: 1rem 0;
-    }
-
-    .line{
-        display: none;
+        text-align: center;
+        margin-bottom: 2rem;
     }
 
     .fill_img_scroll{
         min-width: 15rem;
         max-width: 15rem;
         min-height: 10rem;
-        max-height: 12rem;
+        max-height: 10rem;
         display: block;
     }
 
@@ -1351,9 +1548,28 @@ ul li:hover > .blogs {
     /* ============================================================================================================== */
     /* FOOTER-END */
     /* ============================================================================================================== */
+    
 }
 
-@media (max-width: 380px) {
+@media (max-width: 400px) {
+    /* ============================================================================================================== */
+    /* HOME-START */
+    /* ============================================================================================================== */
+    
+    .fill_img {
+        max-width: 15rem;
+        min-width: 15rem;
+        max-height: 10rem;
+        min-height: 10rem;
+        margin: 0;
+    }
+
+    .read_now_main{
+        margin-bottom: 1rem;
+    }
+    /* ============================================================================================================== */
+    /* HOME-END */
+    /* ============================================================================================================== */
     /* ============================================================================================================== */
     /* FOOTER-START */
     /* ============================================================================================================== */
@@ -1440,41 +1656,102 @@ ul li:hover > .blogs {
     /* FOOTER-END */
     /* ============================================================================================================== */
 }
-
-/* Blog 3 Mobile Viewport */
-
-@media (max-width: 932px) {
-    .desktop {
-        display: none;
+@media (max-width: 376px) {
+    /* ============================================================================================================== */
+    /* HAMBURGER-START */
+    /* ============================================================================================================== */
+    ul li ul.dropdown a{
+        font-size: 1rem;
+        padding: 0 2rem;
+    }
+    /* ============================================================================================================== */
+    /* HAMBURGER-END */
+    /* ============================================================================================================== */
+    /* ============================================================================================================== */
+    /* HOME-START */
+    /* ============================================================================================================== */
+    
+    .scroll_container{
+        gap: 2rem;                  
     }
 
-    .mobile {
-        display: block
+    /* ============================================================================================================== */
+    /* HOME-END */
+    /* ============================================================================================================== */
+    /* ============================================================================================================== */
+    /* FOOTER-START */
+    /* ============================================================================================================== */
+    .footer {
+        padding: 1.3rem;
     }
 
-    .image-mobile {
-        margin-bottom: 1.5rem;
+
+    .footer_nav_right {
+        text-align: right;
     }
 
-    /* For Blog 1 */
-    .blog-content {
-    display: block;
-    gap: 0;
-    text-align: justify;
-    margin: 0 5% 0 5%;
+    .contact{
+        width: 6.5rem;
     }
 
-    .left {
-    margin-left: 0;  
-    margin-bottom: 1rem;
-    }
 
-    .right {
-        margin-right: 0;
-        margin-bottom: 2rem;
-    }
-
+    /* ============================================================================================================== */
+    /* FOOTER-END */
+    /* ============================================================================================================== */
 }
+
+@media (max-width: 365px) {
+    /* ============================================================================================================== */
+    /* HOME-START */
+    /* ============================================================================================================== */
+    
+    .fill_img {
+        min-width: 70%;
+        max-width: 70%;
+        min-height: 70%;
+        max-height: 70%;
+    }
+
+    /* .other{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        margin: 1rem 3rem;
+    }
+
+    .other h1 {
+        font-size: 1.5rem;
+        padding: 0;
+        width: 100%;
+
+    } */
+
+    .scroll_container{
+        gap: 0.5rem;                  
+    }
+/* 
+    .line{
+        width: 70%;
+        margin: auto 0;
+    } */
+    /* ============================================================================================================== */
+    /* HOME-END */
+    /* ============================================================================================================== */
+    /* ============================================================================================================== */
+    /* FOOTER-START */
+    /* ============================================================================================================== */
+    .footer_title{
+            text-align: right;
+            min-width: auto;
+    }
+    .footer_nav_right{
+       margin: 0;
+    }
+    /* ============================================================================================================== */
+    /* FOOTER-END */
+    /* ============================================================================================================== */
+}
+
 @media (max-width: 345px) {
     /* ============================================================================================================== */
     /* HAMBURGER-START */
@@ -1493,6 +1770,36 @@ ul li:hover > .blogs {
     }
     /* ============================================================================================================== */
     /* HAMBURGER-END */
+    /* ============================================================================================================== */
+    /* ============================================================================================================== */
+    /* HOME-START */
+    /* ============================================================================================================== */
+    /* .other h1 {
+        font-size: 1.2rem;
+        padding: 0;
+        width: 100%;
+    } */
+
+    .fill_img{
+        max-width: 13rem;
+        
+    }
+
+    .main_content h1{
+        font-size: 150%;
+        padding: auto 1rem;
+    }
+
+    .scroll_container{
+        gap: 0.5rem;                  
+    }
+
+    .line{
+        width: 80%;
+        margin: auto 0;
+    }
+    /* ============================================================================================================== */
+    /* HOME-END */
     /* ============================================================================================================== */
     /* ============================================================================================================== */
     /* FOOTER-START */
@@ -1572,4 +1879,87 @@ ul li:hover > .blogs {
     /* ============================================================================================================== */
     /* FOOTER-END */
     /* ============================================================================================================== */
+}
+
+
+/* Blog Mobile Viewport */
+
+@media (max-width: 1024px) {
+    .blog3 {
+        gap: 2rem;
+    }
+}
+
+@media (max-width: 600px) {
+    /* Blog 1 */
+    .blog-content {
+    display: block;
+    gap: 0;
+    text-align: justify;
+    margin: 0 5% 0 5%;
+    }
+
+    .left {
+    margin-left: 0;  
+    margin-bottom: 1rem;
+    }
+
+    .right {
+        margin-right: 0;
+        margin-bottom: 2rem;
+    }
+
+    /* ============================================================================================================== */
+    /* BLOG 3 */
+    /* ============================================================================================================== */
+    .desktop {
+        display: none;
+    }
+
+    .mobile {
+        display: block;
+    }
+
+    .blog3 {
+        flex-direction: column;
+    }
+     
+    .blog3-first {
+        width: 100%;
+    }
+
+    .blog3-first .blog3-image img {
+        max-width: 100%;
+    }
+
+    .blog3 p {
+        line-height: 2rem;
+        font-size: 1rem;
+    }
+
+    .title {
+        margin-bottom: 12%;
+    }
+
+    .title h1 {
+        font-size: 2.1rem;
+    }
+
+    .title p {
+        font-size: 0.8rem;
+    }
+
+    .blog3 .citation {
+        margin-top: 0;
+        line-height: 1rem;
+        font-size: 0.50rem;
+    }
+
+    .blog3 img {
+        margin-bottom: 0;
+    }
+
+    .blog3-second .published {
+        margin-top: 27%;
+    }
 }
