@@ -2145,15 +2145,35 @@ img.garam {
     
 }
 
+/* ============================================================================================================== */
+/* NINS BLOG */
+/* ============================================================================================================== */
+
+
 @media (max-width: 1024px) and (min-width: 600px) {
     .blog3.alejandro-blog3 {
         flex-direction: row;
         flex-wrap: wrap;
     }
     
-    .alejandro-column, .blog3-second {
+    .alejandro-column, .blog3-second-alejandro {
         flex: 1 1 100%;
     }
+
+    .blog3.blog3-shane {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .mendoza-container .title h1 {
+        padding: 2rem;
+    }
+
+    .shane-first, .blog3-second-mendoza {
+        flex: 1 1 100%;
+    }
+
+    
 }
 
 
