@@ -2276,4 +2276,8 @@ img.garam {
     .alejandro-blog3 .desktop {
         display: none;
     }
+
+    .alejandro-container {
+        padding: 0;
+    }
 }
