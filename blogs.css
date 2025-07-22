@@ -387,6 +387,17 @@ ul li:hover > .blogs {
     font-weight: bold;
 }
 
+.niña_image_title{
+    font-size: 1rem !important;
+    margin-bottom: 0.5rem !important;
+}
+
+.niña_painter_title{
+    font-size: 0.7rem !important;
+    margin-bottom: 2rem !important;
+}
+
+
 .nins-citation .painter {
     line-height: 0;
     margin: 0;
@@ -655,7 +666,7 @@ img.garam {
     background: black;
     bottom: 0;
     left: 0;
-    z-index: 10;
+    z-index: 1000;
     justify-content: flex-end;
 }
 
@@ -1318,7 +1329,7 @@ img.garam {
         background: black;
         bottom: 0;
         left: 0;
-        z-index: 10;
+
         padding: 1.5rem;
     }
 
@@ -1803,7 +1814,6 @@ img.garam {
         background: black;
         bottom: 0;
         left: 0;
-        z-index: 10;
         padding: 1.5rem;
     }
 
@@ -1828,14 +1838,6 @@ img.garam {
 
     .footer_nav_left p{
         padding-right: 0.1;
-    }
-
-    .footer_nav_right {
-        display: flex;
-        flex-direction: row;
-        justify-content: flex-start;
-        font-size: 0.3rem;
-        width: 10rem;
     }
 
     .footer_nav_right p{
@@ -1878,6 +1880,33 @@ img.garam {
     /* FOOTER-END */
     /* ============================================================================================================== */
     
+}
+
+@media (max-width: 470px) {
+    .niña_image_title{
+        font-size: clamp(0.5rem, 3vw, 0.7rem) !important;
+    }
+
+    .niña_painter_title{
+        font-size: clamp(0.3rem, 2.5vw, 0.5rem) !important;
+    }
+}
+
+@media (max-width: 460px) {
+    /* ============================================================================================================== */
+    /* FOOTER-START */
+    /* ============================================================================================================== */
+    .footer_nav_right {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        font-size: 0.3rem;
+        width: 10rem;
+    }
+    /* ============================================================================================================== */
+    /* FOOTER-END */
+    /* ============================================================================================================== */
+
 }
 
 @media (max-width: 400px) {
@@ -2199,23 +2228,30 @@ img.garam {
 }
 
 @media (max-width: 600px) {
-    /* Blog 1 */
+    /* ============================================================================================================== */
+    /* BLOG 1 */
+    /* ============================================================================================================== */
     .blog-content {
-    display: block;
-    gap: 0;
-    text-align: justify;
-    margin: 0 5% 0 5%;
+        display: block;
+        gap: 0;
+        text-align: justify;
+        margin: 0 5% 0 5%;
     }
 
     .left {
-    margin-left: 0;  
-    margin-bottom: 1rem;
+        margin-left: 0;  
+        margin-bottom: 1rem;
     }
 
     .right {
         margin-right: 0;
         margin-bottom: 2rem;
     }
+
+    /* .first_pic_cite{
+        margin: 0 clamp(0.5rem, 3vw, 2rem) !important;
+        border: red 1px solid;
+    } */
 
     /* ============================================================================================================== */
     /* BLOG 3 */
@@ -2227,6 +2263,7 @@ img.garam {
     .space-top .blog2-container .ninsblog .desktop {
         display: none;
     }
+
 
     .mobile {
         display: block;
@@ -2275,6 +2312,18 @@ img.garam {
         margin-top: 27%;
     }
 
+    .shane_break{
+        display: none;
+    }
+
+    /* .shane_netflix{
+        border: red 1px solid;
+    }
+
+    .togo{
+        border: 1px solid red;
+    } */
+
     /* ============================================================================================================== */
     /* NINS BLOG */
     /* ============================================================================================================== */
@@ -2300,6 +2349,14 @@ img.garam {
     margin-top: 0;
     }
 
+    /* .yona_paragraph{
+        border: 1px red solid;
+    }
+
+    .yona_image{
+        border: 1px red solid;
+    } */
+
     .tablet {
         display: none;
     }
@@ -2321,6 +2378,7 @@ img.garam {
         padding-bottom: .5rem;
         margin-bottom: 0;
     }
+
 
     .mobile .new-size p {
         padding-top: 2%;

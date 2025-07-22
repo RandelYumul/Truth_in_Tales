@@ -136,3 +136,36 @@ volumeControl.addEventListener("input", () => {
   audio.volume = volumeControl.value;
 });
 
+document.addEventListener("DOMContentLoaded", () => {
+  const musicBox = document.getElementById("music");
+  const footer = document.getElementById("footer");
+
+  if (!musicBox || !footer) {
+    console.warn("Missing #music or #footer");
+    return;
+  }
+
+  const observer = new IntersectionObserver(
+    ([entry]) => {
+      if (entry.isIntersecting) {
+        const footerTop = footer.getBoundingClientRect().top + window.scrollY;
+        const boxHeight = musicBox.offsetHeight;
+        musicBox.style.position = "absolute";
+        musicBox.style.bottom = "unset";
+        musicBox.style.top = `${footerTop - boxHeight - 16}px`;
+        console.log("Footer is visible — switching to absolute");
+      } else {
+        musicBox.style.position = "fixed";
+        musicBox.style.bottom = "1rem";
+        musicBox.style.top = "unset";
+        console.log("Footer not visible — using fixed");
+      }
+    },
+    {
+      root: null,
+      threshold: 0.1,
+    }
+  );
+
+  observer.observe(footer);
+});

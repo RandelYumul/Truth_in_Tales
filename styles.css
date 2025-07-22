@@ -423,10 +423,7 @@ ul li:hover > .blogs {
 .footer {
     position: relative;
     background: black;
-    bottom: 0;
-    left: 0;
-    z-index: 10;
-    justify-content: flex-end;
+    z-index: 1000;
 }
 
 .contact_us{
@@ -1216,7 +1213,6 @@ ul li:hover > .blogs {
         background: black;
         bottom: 0;
         left: 0;
-        z-index: 10;
         padding: 1.5rem;
     }
 
@@ -1712,14 +1708,6 @@ ul li:hover > .blogs {
     /* ============================================================================================================== */
     /* FOOTER-START */
     /* ============================================================================================================== */
-    .footer {
-        position: relative;
-        background: black;
-        bottom: 0;
-        left: 0;
-        z-index: 10;
-        padding: 1.5rem 0.5rem;
-    }
 
     .contact_us{
         color: white;
@@ -1812,14 +1800,6 @@ ul li:hover > .blogs {
     /* ============================================================================================================== */
     /* FOOTER-START */
     /* ============================================================================================================== */
-    .footer {
-        position: relative;
-        background: black;
-        bottom: 0;
-        left: 0;
-        z-index: 10;
-        padding: 1.5rem;
-    }
 
     .contact_us{
         color: white;
@@ -1838,19 +1818,11 @@ ul li:hover > .blogs {
         justify-content: left;
         font-size: 0.3rem;
         width: 9rem;
-    }
+    } */
 
     .footer_nav_left p{
         padding-right: 0.1;
-    }
-
-    .footer_nav_right {
-        display: flex;
-        flex-direction: row;
-        justify-content: flex-start;
-        font-size: 0.3rem;
-        width: 10rem;
-    }
+    } 
 
     .footer_nav_right p{
         padding-left: 0.1;
@@ -1912,6 +1884,23 @@ ul li:hover > .blogs {
     /* ============================================================================================================== */
     /* ABOUT-US-END */
     /* ============================================================================================================== */
+}
+
+@media (max-width: 460px) {
+    /* ============================================================================================================== */
+    /* FOOTER-START */
+    /* ============================================================================================================== */
+    .footer_nav_right {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        font-size: 0.3rem;
+        width: 10rem;
+    }
+    /* ============================================================================================================== */
+    /* FOOTER-END */
+    /* ============================================================================================================== */
+
 }
 
 @media (max-width: 395px) {
@@ -2087,6 +2076,7 @@ ul li:hover > .blogs {
         color: white;
         padding: 2rem;
         width: 100%;
+        
     }
 
     .small_footer_logo {
