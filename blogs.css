@@ -579,6 +579,34 @@ img.garam {
 }
 
 /* ============================================================================================================== */
+/* HAROLD BLOG*/
+/* ============================================================================================================== */
+
+.laufey-image img {
+    margin-top: 1.9%;
+    text-align: center;
+    align-items: center;
+    margin-right: 0;
+}
+
+.blog3-second .valderrama-published {
+    text-align: right;
+    font-style: italic;
+    font-weight: bold;
+    margin-top: 20%
+}
+
+.valderrama-blog3 {
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+.valderrama-second {
+    margin-top: 0;
+    padding-bottom: 0;
+}
+
+/* ============================================================================================================== */
 /* FOOTER-START */
 /* ============================================================================================================== */
 .footer {
