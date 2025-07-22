@@ -117,3 +117,22 @@ window.addEventListener('DOMContentLoaded', () => {
   audio.volume = 0.2;
 });
 
+
+const audio = document.getElementById("myAudio");
+const playPauseBtn = document.getElementById("playPauseBtn");
+const volumeControl = document.getElementById("volumeControl");
+
+playPauseBtn.addEventListener("click", () => {
+  if (audio.paused) {
+    audio.play();
+    playPauseBtn.textContent = "Music off";
+  } else {
+    audio.pause();
+    playPauseBtn.textContent = "Music on";
+  }
+});
+
+volumeControl.addEventListener("input", () => {
+  audio.volume = volumeControl.value;
+});
+

@@ -8,6 +8,39 @@ html, body {
   height: 100%;
 }
 
+/* ============================================================================================================== */
+/* MUSIC-START */
+/* ============================================================================================================== */
+
+.music {
+  position: fixed;
+  bottom: 1rem;
+  right: 1rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 1rem;
+  z-index: 999;
+  width: auto;
+  height: auto;
+  justify-content: flex-end;
+}
+
+#playPauseBtn {
+  color: white;
+  background-color: black;
+  padding: 0.5rem 1rem;
+  border-radius: 1rem;
+  font-size: 1rem;
+  border: none;
+  cursor: pointer;
+}
+
+
+/* ============================================================================================================== */
+/* MUSIC-END */
+/* ============================================================================================================== */
+
 a{
     text-decoration: none;
 }

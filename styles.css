@@ -12,6 +12,39 @@ a{
     text-decoration: none;
 }
 
+/* ============================================================================================================== */
+/* MUSIC-START */
+/* ============================================================================================================== */
+
+.music {
+  position: fixed;
+  bottom: 1rem;
+  right: 1rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 1rem;
+  z-index: 999;
+  width: auto;
+  height: auto;
+  justify-content: flex-end;
+}
+
+#playPauseBtn {
+  color: white;
+  background-color: black;
+  padding: 0.5rem 1rem;
+  border-radius: 1rem;
+  font-size: 1rem;
+  border: none;
+  cursor: pointer;
+}
+
+
+/* ============================================================================================================== */
+/* MUSIC-END */
+/* ============================================================================================================== */
+
 .content{
     flex:1;
 }
@@ -540,7 +573,7 @@ ul li:hover > .blogs {
 }
 
 .about_profile{
-        max-width: 20rem;
+        max-width: 25rem;
         min-width: 10%;
         max-height: auto;
         min-height: auto;
@@ -554,6 +587,7 @@ ul li:hover > .blogs {
     flex-direction: row;
     justify-content: center;
     height: auto;
+    gap: 2rem;
 }
 
 
@@ -563,7 +597,12 @@ ul li:hover > .blogs {
     margin-top: clamp(0.3rem, 3vw, 2rem);
 }
 
-.profile p{
+.role{
+    margin-top: clamp(0.2rem, 1vh, 1rem);
+    color: #8D8D8D;
+}
+
+.descrip{
     font-size: clamp(0.3rem, 2vw, 1rem);
     text-align: center;
     margin-top: clamp(0.3rem, 3vw, 2rem);
@@ -574,7 +613,10 @@ ul li:hover > .blogs {
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: flex-start;
     margin-top: 5%;
+    max-width: 25rem;
+    min-width: 25rem;
 }
 
 /* .profile_2{
@@ -623,6 +665,16 @@ ul li:hover > .blogs {
         max-width: 30rem;
     }
 
+    .about_profile{
+        max-width: 20rem;
+        min-width: 20rem;
+    }
+
+    .profile{
+        max-width: 20rem;
+        min-width: 20rem;
+    }
+
 }
 @media (max-width: 1190px) {
 
@@ -633,6 +685,16 @@ ul li:hover > .blogs {
     .fill_img{
         min-height: 17rem;
         max-height: 17rem;
+    }
+
+    .about_profile{
+        max-width: 17rem;
+        min-width: 17rem;
+    }
+
+    .profile{
+        max-width: 17rem;
+        min-width: 17rem;
     }
 }
 @media (max-width: 1090px) {
@@ -947,13 +1009,13 @@ ul li:hover > .blogs {
     /* ============================================================================================================== */
 
     .about_profile{
-            max-width: 17rem;
-            min-width: 10%;
-            max-height: auto;
-            min-height: auto;
-            aspect-ratio: 1/1;
-            display: block;
-            object-fit: cover;
+        max-width: 25rem;
+        min-width: 25rem;
+    }
+
+    .profile{
+        max-width: 25rem;
+        min-width: 25rem;
     }
 
     .about_content{
@@ -1049,6 +1111,16 @@ ul li:hover > .blogs {
         flex-direction: column;
     }
 
+    .about_profile{
+        max-width: 20rem;
+        min-width: 20rem;
+    }
+
+    .profile{
+        max-width: 20rem;
+        min-width: 20rem;
+    }
+
     /* ============================================================================================================== */
     /* ABOUT-US-END */
     /* ============================================================================================================== */
@@ -1137,33 +1209,6 @@ ul li:hover > .blogs {
     /* ============================================================================================================== */
 
     /* ============================================================================================================== */
-    /* ABOUT-US-START */
-    /* ============================================================================================================== */
-
-    .about_profile{
-            max-width: 15rem;
-            min-width: 10%;
-            max-height: auto;
-            min-height: auto;
-            aspect-ratio: 1/1;
-            display: block;
-            object-fit: cover;
-    }
-    .about_blog_content{
-        padding-top: 0.5rem;
-        font-size: 0.8rem;
-        word-spacing: 0.2rem;
-        line-height: 1.1rem;
-    }
-
-    .whole_profile{
-        display: none;
-    }
-
-    /* ============================================================================================================== */
-    /* ABOUT-US-END */
-    /* ============================================================================================================== */
-    /* ============================================================================================================== */
     /* FOOTER-START */
     /* ============================================================================================================== */
     .footer {
@@ -1246,9 +1291,31 @@ ul li:hover > .blogs {
     /* ============================================================================================================== */
     /* ABOUT-US-START */
     /* ============================================================================================================== */
-    .about_content{
-        margin-top: 3rem;
+
+    .about_profile{
+        max-width: 80%;
+        min-width: 10%;
     }
+
+    .profile{
+        max-width: 80%;
+        min-width: 10%;
+        margin-left: auto;
+        margin-right: auto;
+
+    }
+
+    .about_blog_content{
+        padding-top: 0.5rem;
+        font-size: 0.8rem;
+        word-spacing: 0.2rem;
+        line-height: 1.1rem;
+    }
+
+    .about_content{
+        margin: 3rem;
+    }
+
     .about_main{
         display: flex;
         flex-direction: column;
@@ -1262,10 +1329,6 @@ ul li:hover > .blogs {
         max-height: 18rem;
     }
 
-    /* .about_content h1{
-        margin-bottom: 3rem;
-    } */
-
     .about_main_text{
         padding-left: 0;
         text-align: center;
@@ -1278,7 +1341,7 @@ ul li:hover > .blogs {
 
     .about_blog_content{
         padding-top: 0.5rem;
-        font-size: 1.2rem;
+        font-size: clamp(0.3rem, 2vh, 1.2rem);
         word-spacing: 0.2rem;
         line-height: 1.5rem;
     }
@@ -1286,7 +1349,7 @@ ul li:hover > .blogs {
     .whole_profile_ipad{
         display: flex;
         flex-direction: column;
-        margin: 1rem 5rem 2rem 5rem;
+        margin: 1rem 2.5rem 2rem 2.5rem;
     }
 
     .whole_profile{
@@ -1301,13 +1364,17 @@ ul li:hover > .blogs {
     }
 
     .profile h1{
-        font-size: clamp(0.3rem, 4vw, 3rem);
+        font-size: clamp(0.7rem, 6vw, 2rem);
         text-align: center;
     }
+    .role{
+        font-size: clamp(0.2rem, 3vw, 2rem);
+    }
 
-    .profile p{
-        font-size: clamp(0.3rem, 3vw, 1rem);
+    .descrip{
+        font-size: clamp(0.5rem, 5vw, 1.5rem);
         text-align: center;
+        margin-top: clamp(0.3rem, 3vw, 2rem);
     }
 
     /* ============================================================================================================== */
@@ -1823,6 +1890,27 @@ ul li:hover > .blogs {
 
     /* ============================================================================================================== */
     /* FOOTER-END */
+    /* ============================================================================================================== */
+    /* ============================================================================================================== */
+    /* ABOUT-US-START */
+    /* ============================================================================================================== */
+    .profile h1{
+        font-size: clamp(0.7rem, 4.5vw, 2rem);
+        text-align: center;
+    }
+
+    .role{
+        font-size: clamp(0.2rem, 2vw, 2rem);
+    }
+    
+    .descrip{
+        font-size: clamp(0.5rem, 2.5vw, 1.5rem);
+        text-align: center;
+        margin-top: clamp(0.3rem, 3vw, 2rem);
+    }
+
+    /* ============================================================================================================== */
+    /* ABOUT-US-END */
     /* ============================================================================================================== */
 }
 
