@@ -104,6 +104,7 @@ a{
     color: black;
     font-size: 1.2rem; 
     padding: 1rem 2rem;
+    text-decoration: none !important;
 }
 
 .nav-link.active {
@@ -119,11 +120,17 @@ a{
     background-color: black;
     color: white;
     padding: .5rem 1.7rem;
-    border-top-left-radius: 2rem;
-    border-top-right-radius: 2rem;
+    border-radius: 2rem;
     text-align: center;
     cursor: default;
 }
+
+ul li:hover > .nav-link.active_blog {
+    border-radius: 0;
+    border-top-left-radius: 1.5rem;
+    border-top-right-radius: 1.5rem;
+}
+
 
 ul li ul.dropdown li {
     display: block;
@@ -167,7 +174,8 @@ ul li ul.dropdown li:hover {
     width: 15rem;
 }
 
-ul li ul.dropdown li:last-child:hover {
+ul li ul.dropdown li:last-child, ul li ul.dropdown li:last-child:hover {
+    padding-bottom: 0.3rem;
     border-bottom-left-radius: 2rem;
     border-bottom-right-radius: 2rem;
 }
