@@ -393,6 +393,7 @@ ul li:hover > .blogs {
     bottom: 0;
     left: 0;
     z-index: 10;
+    justify-content: flex-end;
 }
 
 .contact_us{
@@ -401,7 +402,7 @@ ul li:hover > .blogs {
 
 .contact{
     color: white;
-    font-size: 2rem;
+    font-size: 2.5rem;
 }
 
 .footer_nav_left {
@@ -411,7 +412,8 @@ ul li:hover > .blogs {
 }
 
 .footer_nav_left p{
-    padding-right: 1rem;
+    margin-top: 1rem;
+    margin-right: 1rem;
 }
 
 .footer_nav_right {
@@ -421,7 +423,8 @@ ul li:hover > .blogs {
 }
 
 .footer_nav_right p{
-    padding-left: 1rem;
+    margin-top: 1rem;
+    margin-left: 1rem;
 }
 
 .footer_title{
@@ -440,14 +443,13 @@ ul li:hover > .blogs {
 .logo_wrapper{
     display: flex;
     flex-direction: row;
-    justify-content: left;
+    justify-content: center;
 }
 
 .logo_foot{
-    padding-left: 1rem;
-    margin-top: 0;
-    width: 3rem;
-    height: 2rem;
+    width: 2.5rem;
+    height: 2.5rem;
+    margin-left: 1rem;
 }
 
 .footer_logo {
@@ -1064,6 +1066,23 @@ ul li:hover > .blogs {
         min-height: 20rem;
     }
     /* ============================================================================================================== */
+    /* FOOTER-START */
+    /* ============================================================================================================== */
+    .contact{
+        color: white;
+        font-size: 2rem;
+    }
+
+    .logo_foot{
+        width: 2rem;
+        height: 2rem;
+        margin-left: 1rem;
+    }
+
+    /* ============================================================================================================== */
+    /* FOOTER-END */
+    /* ============================================================================================================== */
+    /* ============================================================================================================== */
     /* ABOUT-US-START */
     /* ============================================================================================================== */
     .about_fill_img {
@@ -1162,9 +1181,8 @@ ul li:hover > .blogs {
 
     .contact{
         color: white;
-        font-size: 1.4rem;
+        font-size: 1.5rem;
         width: auto;
-        margin-bottom: 1rem;
     }
 
     .footer_nav_left {
@@ -1195,7 +1213,6 @@ ul li:hover > .blogs {
         color: white;
         text-align: right;
         font-size: 1.5rem;
-        margin-bottom: 1rem;
     }
 
     .footer_l_r {
@@ -1212,10 +1229,9 @@ ul li:hover > .blogs {
     }
 
     .logo_foot{
-        padding-left: 1rem;
         margin-top: 0.3rem;
-        width: 2rem;
-        height: 1rem;
+        width: 1.5rem;
+        height: 1.5rem;
     }
 
     .footer_logo {
@@ -1635,7 +1651,7 @@ ul li:hover > .blogs {
         bottom: 0;
         left: 0;
         z-index: 10;
-        padding: 1.5rem;
+        padding: 1.5rem 0.5rem;
     }
 
     .contact_us{
@@ -1644,9 +1660,8 @@ ul li:hover > .blogs {
 
     .contact{
         color: white;
-        font-size: 1.4rem;
-        width: 7rem;
-        margin-bottom: 1rem;
+        font-size: 1.5rem;
+        width: 8rem;
     }
 
     .footer_nav_left {
@@ -1665,19 +1680,18 @@ ul li:hover > .blogs {
         display: flex;
         flex-direction: row;
         justify-content: flex-end;
-        font-size: 0.3rem;
-        width: 10rem;
+        font-size: 0.4rem;
+        width: 15rem;
     }
 
     .footer_nav_right p{
-        padding-left: 0.4;
+        padding-left: 0.;
     }
 
     .footer_title{
         color: white;
         text-align: right;
         font-size: 1.5rem;
-        margin-bottom: 1rem;
     }
 
     .footer_l_r {
@@ -1694,10 +1708,8 @@ ul li:hover > .blogs {
     }
 
     .logo_foot{
-        padding-left: 1rem;
-        margin-top: 0.3rem;
-        width: 2rem;
-        height: 1rem;
+        width: 1.5rem;
+        height: 1.5rem;
     }
 
     .footer_logo {
@@ -1749,8 +1761,7 @@ ul li:hover > .blogs {
     .contact{
         color: white;
         font-size: 1.2rem;
-        width: 7rem;
-        margin-bottom: 1rem;
+        width: 6rem;
     }
 
 
@@ -1782,7 +1793,6 @@ ul li:hover > .blogs {
         color: white;
         text-align: right;
         font-size: 1.2rem;
-        margin-bottom: 1rem;
     }
 
     .footer_l_r {
@@ -1799,8 +1809,7 @@ ul li:hover > .blogs {
     }
 
     .logo_foot{
-        padding-left: 0.2rem;
-        margin-top: 0.3rem;
+        margin-left: 0.5rem;
         width: 1rem;
         height: 1rem;
     }
