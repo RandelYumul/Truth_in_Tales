@@ -527,7 +527,7 @@ img.garam {
 .alejandro-citation .citation, .alejandro-new-size .citation {
     margin-top: 0;
     display: block;
-    font-size: 0.70rem;
+    font-size: 0.90rem;
     font-style: italic;
     color: #B9B9B9;
     padding-top: 0;
@@ -2336,6 +2336,6 @@ img.garam {
     }
 
     .alejandro-citation .citation, .alejandro-new-size .citation {
-        font-size: 0.5rem;
+        font-size: 0.75rem;
     }
 }
