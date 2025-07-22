@@ -2280,4 +2280,8 @@ img.garam {
     .alejandro-container {
         padding: 0;
     }
+
+    .alejandro-container .title h1 {
+        padding: 2rem;
+    }
 }
