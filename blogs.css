@@ -2194,7 +2194,7 @@ img.garam {
 /* ============================================================================================================== */
 
 
-@media (max-width: 1024px) and (min-width: 600px) {
+@media (max-width: 1024px) and (min-width: 532px) {
     .blog3.alejandro-blog3 {
         flex-direction: row;
         flex-wrap: wrap;
@@ -2217,6 +2217,39 @@ img.garam {
         flex: 1 1 100%;
     }
 
+    .desktop {
+        display: none;
+    }
+
+    .shane-tablet {
+        display: block;
+    }
+
+    .shane-tablet .citation {
+        text-align: center;
+        font-size: 0.7rem;
+    }
+
+    .shane-first {
+        width: 100%;
+    }
+
+    .shane-first .blog3-image img {
+        max-width: 100%;
+        height: auto;
+        text-align: center;
+        align-items: center;
+    }
+
+    .shane-tablet {
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .mendoza-container .title  h1{
+        margin-bottom: 0;
+        padding-bottom: 0;
+    }
     
 }
 
@@ -2312,6 +2345,33 @@ img.garam {
         margin-top: 27%;
     }
 
+    /* ============================================================================================================== */
+    /* SHANE BLOG */
+    /* ============================================================================================================== */
+
+
+    .mendoza-container .title h1 {
+        margin-top: 10%;
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+
+    .shane-blog3-container {
+        margin-bottom: 0;
+        padding-bottom: 0;
+        margin-top: 0;
+        padding-top: 0;
+    }
+
+    .after-hr {
+        padding-top: 0;
+    }
+
+    .shane-first .blog3-image img {
+        margin-top: 0;
+        padding-top: 0;
+    }
+    
     .shane_break{
         display: none;
     }
