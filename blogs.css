@@ -354,6 +354,10 @@ ul li:hover > .blogs {
     font-weight: bold;
 }
 
+.ninsblog .nins-published {
+    padding-bottom: 10%;
+}
+
 .column .second-pic {
     margin-top: 3%;
     margin-bottom: 5%;
@@ -603,7 +607,11 @@ img.garam {
     text-align: right;
     font-style: italic;
     font-weight: bold;
-    margin-top: 5%;
+    margin-top: 18%;
+}
+
+.alejandro-content .ella-spacer {
+    padding-bottom: 5%;
 }
 
 .alejandro-citation .alejandro-citation1, .new-size .alejandro-citation1 {
@@ -641,11 +649,15 @@ img.garam {
     margin-right: 0;
 }
 
+.laufey-image p {
+    padding-bottom: 4%;
+}
+
 .blog3-second .valderrama-published {
     text-align: right;
     font-style: italic;
     font-weight: bold;
-    margin-top: 20%
+    margin-top: 142%
 }
 
 .valderrama-blog3 {
@@ -2194,6 +2206,18 @@ img.garam {
 /* ============================================================================================================== */
 
 
+@media (width: 1024px) {
+    #mae-img-spacer {
+        margin-left: 8%;
+    }
+}
+
+@media (width: 912px) {
+    #mae-img-spacer {
+        margin-left: 2%;
+    }
+}
+
 @media (max-width: 1024px) and (min-width: 532px) {
     .blog3.alejandro-blog3 {
         flex-direction: row;
@@ -2217,7 +2241,7 @@ img.garam {
         flex: 1 1 100%;
     }
 
-    .desktop {
+    .shane-desktop {
         display: none;
     }
 
@@ -2250,6 +2274,33 @@ img.garam {
         margin-bottom: 0;
         padding-bottom: 0;
     }
+
+    .shane-blog3-container .blog3-shane .shane-first .mendoza-column .shane_netflix {
+        margin-bottom: 0;
+    }
+
+    .blog3-second .shane-published {
+        margin-top: 116%;
+    }
+
+    .blog3-second .yona-published {
+        margin-top: 91%;
+    }
+
+    .column .nins-published {
+        margin-top: 167%;
+    }
+
+    .raul-column .raul-published {
+        margin-top: 223%;
+    }
+
+    .blog3-second .valderrama-published {
+    text-align: right;
+    font-style: italic;
+    font-weight: bold;
+    margin-top: 15%
+}
     
 }
 
@@ -2376,6 +2427,10 @@ img.garam {
         display: none;
     }
 
+    .shane-desktop {
+        display: none;
+    }
+
     /* .shane_netflix{
         border: red 1px solid;
     }
@@ -2454,5 +2509,34 @@ img.garam {
 
     .alejandro-citation .citation, .alejandro-new-size .citation {
         font-size: 0.75rem;
+    }
+
+    .alejandro-content .ella-spacer {
+        padding-bottom: 5%;
+    }
+
+    .alejandro-container #img-spacer p {
+        margin-bottom: 10%;
+    }
+
+    .valderrama-second .valderrama-published {
+        margin-top: 20%;
+        margin-bottom: 10%;
+    }
+
+    .harold-container .harold-laufey .spacer {
+        margin-bottom: 10%;
+    }
+
+    .harold-container .image-presentation p {
+        margin-bottom: 5%;
+    }
+
+    #second-pic-laufey {
+        margin-bottom: 7%;
+    }
+
+    .margin-lesser-alejandro .valderrama-blog3 .valderrama-first-image .mobile .new-size p {
+        margin-bottom: 5%;
     }
 }
