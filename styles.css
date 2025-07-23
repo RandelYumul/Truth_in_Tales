@@ -611,7 +611,7 @@ ul li:hover > .blogs {
     flex-direction: column;
     align-items: center;
     justify-content: flex-start;
-    margin-top: 5%;
+    margin: 5% 0;
     max-width: 25rem;
     min-width: 25rem;
 }
