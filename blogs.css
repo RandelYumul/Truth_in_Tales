@@ -66,7 +66,7 @@ a{
 /* ============================================================================================================== */
 /* NAVIGATION-START */
 /* ============================================================================================================== */
-.title{
+.header_title{
     font-size: 2rem;
     font-weight: normal;
 }
@@ -205,6 +205,23 @@ ul li ul.dropdown li:hover {
     display: block;
     background-color: #B9B9B9;
     width: 15rem;
+}
+
+.active_title{
+    display: block;
+    background-color: #B9B9B9;
+    width: 15rem;
+    color: black !important;
+    cursor: default !important;
+}
+
+.active_title_last{
+    display: block;
+    background-color: #B9B9B9;
+    width: 15rem;
+    border-bottom-left-radius: 2rem;
+    border-bottom-right-radius: 2rem;
+    padding-bottom: 0.3rem;
 }
 
 ul li ul.dropdown li:last-child, ul li ul.dropdown li:last-child:hover {
@@ -1104,7 +1121,7 @@ img.garam {
         margin-top: 0;
     }
 
-    .title{
+    .header_title{
         font-size: 3rem;
     }
     .subtitle{
@@ -1800,7 +1817,7 @@ img.garam {
             padding: 0;
         }
 
-        .title{
+        .header_title{
             font-size: 2rem;
         }
         .subtitle{
@@ -2410,7 +2427,7 @@ img.garam {
     /* ============================================================================================================== */
     /* HAMBURGER-START */
     /* ============================================================================================================== */
-    .title{
+    .header_title{
         font-size: 150%;
         margin: auto;
     }

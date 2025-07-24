@@ -66,7 +66,7 @@ a{
 /* ============================================================================================================== */
 /* NAVIGATION-START */
 /* ============================================================================================================== */
-.title{
+.header_title{
     font-size: 2rem;
     font-weight: normal;
 }
@@ -205,6 +205,21 @@ ul li ul.dropdown li:hover {
     display: block;
     background-color: #B9B9B9;
     width: 15rem;
+}
+
+.active_title{
+    display: block;
+    background-color: #B9B9B9;
+    width: 15rem;
+}
+
+.active_title_last{
+    display: block;
+    background-color: #B9B9B9;
+    width: 15rem;
+    border-bottom-left-radius: 2rem;
+    border-bottom-right-radius: 2rem;
+    padding-bottom: 0.3rem;
 }
 
 ul li ul.dropdown li:last-child, ul li ul.dropdown li:last-child:hover {
@@ -616,12 +631,6 @@ ul li:hover > .blogs {
     min-width: 25rem;
 }
 
-/* .profile_2{
-    padding: 0 7rem 7rem 7rem;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-} */
 .whole_profile_ipad{
     display: none;
 }
@@ -710,7 +719,7 @@ ul li:hover > .blogs {
         margin-top: 0;
     }
 
-    .title{
+    .header_title{
         font-size: 3rem;
     }
     .subtitle{
@@ -1131,10 +1140,11 @@ ul li:hover > .blogs {
     }
 
     .fill_img {
-        max-width: 35rem;
-        min-width: 35rem;
+        max-width: 100%;
+        min-width: 100%;
         max-height: 20rem;
         min-height: 20rem;
+        
     }
     /* ============================================================================================================== */
     /* FOOTER-START */
@@ -1181,8 +1191,8 @@ ul li:hover > .blogs {
 
 @media (max-width: 770px){
     .fill_img {
-        max-width: 30rem;
-        min-width: 30rem;
+        /* max-width: 30rem;
+        min-width: 30rem; */
         max-height: 15rem;
         min-height: 15rem;
     }
@@ -1380,12 +1390,12 @@ ul li:hover > .blogs {
     /* ============================================================================================================== */
 }
 
-@media (max-width: 690px){
+/* @media (max-width: 690px){
     .fill_img {
         max-width: 25rem;
         min-width: 25rem;
     }
-}
+} */
 
 
 @media (max-width: 600px) {
@@ -1406,7 +1416,7 @@ ul li:hover > .blogs {
             padding: 0;
         }
 
-        .title{
+        .header_title{
             font-size: 2rem;
         }
         .subtitle{
@@ -1627,8 +1637,8 @@ ul li:hover > .blogs {
     }
 
     .fill_img_scroll{
-        min-width: 15rem;
-        max-width: 15rem;
+        /* min-width: 15rem;
+        max-width: 15rem; */
         min-height: 10rem;
         max-height: 10rem;
         display: block;
@@ -1786,8 +1796,8 @@ ul li:hover > .blogs {
     /* ============================================================================================================== */
     
     .fill_img {
-        max-width: 18rem;
-        min-width: 18rem;
+        /* max-width: 18rem;
+        min-width: 18rem; */
         max-height: 10rem;
         min-height: 10rem;
     }
@@ -1910,8 +1920,8 @@ ul li:hover > .blogs {
     /* ============================================================================================================== */
     
     .fill_img {
-        min-width: 15rem;
-        max-width: 15rem;
+        /* min-width: 15rem;
+        max-width: 15rem; */
         min-height: 7rem;
         max-height: 7rem;
     }
@@ -1927,20 +1937,6 @@ ul li:hover > .blogs {
     .blog_content{
         font-size: 0.8rem;
     }
-
-    /* .other{
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        margin: 1rem 3rem;
-    }
-
-    .other h1 {
-        font-size: 1.5rem;
-        padding: 0;
-        width: 100%;
-
-    } */
 
     .scroll_container{
         gap: 0.5rem;                  
@@ -2016,7 +2012,7 @@ ul li:hover > .blogs {
     /* ============================================================================================================== */
     /* HAMBURGER-START */
     /* ============================================================================================================== */
-    .title{
+    .header_title{
         font-size: 150%;
         margin: auto;
     }
@@ -2034,16 +2030,11 @@ ul li:hover > .blogs {
     /* ============================================================================================================== */
     /* HOME-START */
     /* ============================================================================================================== */
-    /* .other h1 {
-        font-size: 1.2rem;
-        padding: 0;
-        width: 100%;
-    } */
 
-    .fill_img{
+    /* .fill_img{
         min-width: 12rem;
         max-width: 12rem;
-    }
+    } */
 
     .main_content h1{
         font-size: 150%;
@@ -2077,7 +2068,7 @@ ul li:hover > .blogs {
         color: white;
         padding: 2rem;
         width: 100%;
-        
+        z-index: 1000;
     }
 
     .small_footer_logo {
