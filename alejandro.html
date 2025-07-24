@@ -10,64 +10,64 @@
         <title>Truth in Tales</title>
     </head>
 
-    <body>
+    <body class="body">
         <audio id="myAudio" autoplay>
-            <source src="ella_blog.mp3" type="audio/mp3">
+            <source src="eight.mp3" type="audio/mp3">
         </audio>
         <div class="music">
             <button id="playPauseBtn">Music off</button>
         </div>
         <div class="content">
             <nav class="nav__bar">
-            <div class="nav__header">
-                <div class = "logo">
-                    <h1 class = "title">Truth in Tales</h1>
-                    <h2 class = "subtitle">Whispers behind the words</h2>
+                <div class="nav__header">
+                    <div class = "logo">
+                        <h1 class = "title">Truth in Tales</h1>
+                        <h2 class = "subtitle">Whispers behind the words</h2>
+                    </div>
+                <ul>
+                    <li><a class="nav-link home" href="index.html">Home</a></li>
+                    <li><a class="nav-link blogs" href="#">Blogs ▾</a>
+                        <ul class="dropdown">
+                            <li><a class="drop_blog" href="alejandro.html">Cancel Culture: Amplifying Accountability or Silencing Growth?</a></li>
+                            <li><a class="drop_blog" href="decilio.html">Opting Out of Parenthood: It's Not Selfish, It's Honest</a></li>
+                            <li><a class="drop_blog" href="mendoza.html">Lines of Memory: The Art of Thibaud Hérem</a></li>
+                            <li><a class="drop_blog" href="pascua.html">Burnout Is the New Broken Wing: Why We're Still Expected to Fly</a></li>
+                            <li><a class="drop_blog" href="valderrama.html">The Quiet Ache: Laufey's Promise and the Sound of Lingering Love</a></li>
+                            <li><a class="drop_blog" href="yumul.html">When Nothing Feels Certain, What Do You Hold On To?</a></li>
+                        </ul>
+                    </li>
+                    <li><a class="nav-link about_us active" href="about us.html">About us</a></li>
+                </ul>
                 </div>
-            <ul>
-                <li><a class="nav-link home" href="index.html">Home</a></li>
-                <li><a class="nav-link blogs active_blog" href="#">Blogs ▾</a>
-                    <ul class="dropdown">
-                        <li><a class="drop_blog" href="alejandro.html">Cancel Culture: Amplifying Accountability or Silencing Growth?</a></li>
-                        <li><a class="drop_blog" href="decilio.html">Opting Out of Parenthood: It's Not Selfish, It's Honest</a></li>
-                        <li><a class="drop_blog" href="mendoza.html">Lines of Memory: The Art of Thibaud Hérem</a></li>
-                        <li><a class="drop_blog" href="pascua.html">Burnout Is the New Broken Wing: Why We're Still Expected to Fly</a></li>
-                        <li><a class="drop_blog" href="valderrama.html">The Quiet Ache: Laufey's Promise and the Sound of Lingering Love</a></li>
-                        <li><a class="drop_blog" href="yumul.html">When Nothing Feels Certain, What Do You Hold On To?</a></li>
-                    </ul>
-                </li>
-                <li><a class="nav-link about_us" href="about us.html">About us</a></li>
-            </ul>
-            </div>
-        </nav>
+            </nav>
 
-        <nav class="nav__bar mobile">
-            <div class="nav__header">
-                <div class = "logo">
-                    <h1 class = "title">Truth in Tales</h1>
-                    <h2 class = "subtitle">Whispers behind the words</h2>
+            <nav class="nav__bar mobile">
+                <div class="nav__header">
+                    <div class = "logo">
+                        <h1 class = "title">Truth in Tales</h1>
+                        <h2 class = "subtitle">Whispers behind the words</h2>
+                    </div>
+                        <input type="checkbox" id="menu-toggle" hidden>
+                        <label for="menu-toggle" class="hamburger">&#9776;</label>
+                    
+                    <div class="drop_menu">  
+                        <ul>
+                            <li><a class="nav-link home mobile" href="index.html">Home</a></li>
+                            <li><a class="nav-link blogs mobile" href="#">Blogs ▾</a>
+                                <ul class="dropdown">
+                                    <li><a class="drop_blog" href="alejandro.html">Cancel Culture: Amplifying Accountability or Silencing Growth?</a></li>
+                                    <li><a class="drop_blog" href="decilio.html">Opting Out of Parenthood: It's Not Selfish, It's Honest</a></li>
+                                    <li><a class="drop_blog" href="mendoza.html">Lines of Memory: The Art of Thibaud Hérem</a></li>
+                                    <li><a class="drop_blog" href="pascua.html">Burnout Is the New Broken Wing: Why We're Still Expected to Fly</a></li>
+                                    <li><a class="drop_blog" href="valderrama.html">The Quiet Ache: Laufey's Promise and the Sound of Lingering Love</a></li>
+                                    <li><a class="drop_blog" href="yumul.html">When Nothing Feels Certain, What Do You Hold On To?</a></li>
+                                </ul>
+                            </li>
+                            <li><a class="nav-link about_us active mobile" href="about us.html">About us</a></li>
+                        </ul>
+                    </div>
                 </div>
-                    <input type="checkbox" id="menu-toggle" hidden>
-                    <label for="menu-toggle" class="hamburger">&#9776;</label>
-                
-                <div class="drop_menu">  
-                    <ul>
-                        <li><a class="nav-link home mobile" href="index.html">Home</a></li>
-                        <li><a class="nav-link blogs active_blog mobile" href="#">Blogs ▾</a>
-                            <ul class="dropdown">
-                                <li><a class="drop_blog" href="alejandro.html">Cancel Culture: Amplifying Accountability or Silencing Growth?</a></li>
-                                <li><a class="drop_blog" href="decilio.html">Opting Out of Parenthood: It's Not Selfish, It's Honest</a></li>
-                                <li><a class="drop_blog" href="mendoza.html">Lines of Memory: The Art of Thibaud Hérem</a></li>
-                                <li><a class="drop_blog" href="pascua.html">Burnout Is the New Broken Wing: Why We're Still Expected to Fly</a></li>
-                                <li><a class="drop_blog" href="valderrama.html">The Quiet Ache: Laufey's Promise and the Sound of Lingering Love</a></li>
-                                <li><a class="drop_blog" href="yumul.html">When Nothing Feels Certain, What Do You Hold On To?</a></li>
-                            </ul>
-                        </li>
-                        <li><a class="nav-link about_us mobile" href="about us.html">About us</a></li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
+            </nav>
         <div class="content_footer"></div>
         
             <main class="blog3-container alejandro-container">
@@ -133,59 +133,59 @@
 
         </div>
             <div class="footer">
-                <div class="footer_l_r">
-                    <div class = "footer_left">
-                        <div class="footer_logo">
-                            <p class="contact">Contact us</p>
-                            <div class="logo_wrapper">
-                                <a href="#" target="_blank"><img class="logo_foot" src="assets/facebook.png" alt="Logo_Facebook" /></a>
-                                <a href="#" target="_blank"><img class="logo_foot" src="assets/contact.png" alt="Logo_Facebook" /></a>
-                                <a href="#" target="_blank"><img class="logo_foot" src="assets/instagram.png" alt="Logo_Facebook" /></a>
+                    <div class="footer_l_r">
+                        <div class = "footer_left">
+                            <div class="footer_logo">
+                                <p class="contact">Contact us</p>
+                                <div class="logo_wrapper">
+                                    <a href="#" target="_blank"><img class="logo_foot" src="assets/facebook.png" alt="Logo_Facebook" /></a>
+                                    <a href="#" target="_blank"><img class="logo_foot" src="assets/contact.png" alt="Logo_Facebook" /></a>
+                                    <a href="#" target="_blank"><img class="logo_foot" src="assets/instagram.png" alt="Logo_Facebook" /></a>
+                                </div>
+                            </div>
+                            <div class="footer_nav_left">
+                                <p class="contact_us">All Categories</p>
+                                <p class="contact_us">Help</p>
+                                <a href="#top"><p class="contact_us">Back to Top</p></a>
                             </div>
                         </div>
-                        <div class="footer_nav_left">
-                            <p class="contact_us">All Categories</p>
-                            <p class="contact_us">Help</p>
-                            <a href="#top"><p class="contact_us">Back to Top</p></a>
-                        </div>
-                    </div>
-                    <div class = "footer_right">
-                        <p class="footer_title">Truth in Tales</p>
-                        <div class="footer_nav_right">
-                            <p class="contact_us">Advertisement</p>
-                            <p class="contact_us">Privacy Policy</p>
-                            <p class="contact_us">Visitor Agreement</p>
+                        <div class = "footer_right">
+                            <p class="footer_title">Truth in Tales</p>
+                            <div class="footer_nav_right">
+                                <p class="contact_us">Advertisement</p>
+                                <p class="contact_us">Privacy Policy</p>
+                                <p class="contact_us">Visitor Agreement</p>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
-            <div class="small_footer">
-                <div class="small_footer_l_r">
-                    <div class="small_footer_right">
-                        <p class="small_footer_title">Truth in Tales</p>
-                        <div class="small_footer_nav_right">
-                            <p class="small_contact_us">Advertisement</p>
-                            <p class="small_contact_us">Privacy Policy</p>
-                            <p class="small_contact_us">Visitor Agreement</p>
-                        </div>
-                    </div>
-                    <div class="small_footer_left">
-                        <div class="small_footer_logo">
-                            <p class="small_contact">Contact us</p>
-                            <div class="small_logo_wrapper">
-                                <a href="#" target="_blank"><img class="small_logo_foot" src="assets/facebook.png" alt="Logo_Facebook" /></a>
-                                <a href="#" target="_blank"><img class="small_logo_foot" src="assets/contact.png" alt="Logo_Facebook" /></a>
-                                <a href="#" target="_blank"><img class="small_logo_foot" src="assets/instagram.png" alt="Logo_Facebook" /></a>
+                <div class="small_footer">
+                    <div class="small_footer_l_r">
+                        <div class="small_footer_right">
+                            <p class="small_footer_title">Truth in Tales</p>
+                            <div class="small_footer_nav_right">
+                                <p class="small_contact_us">Advertisement</p>
+                                <p class="small_contact_us">Privacy Policy</p>
+                                <p class="small_contact_us">Visitor Agreement</p>
                             </div>
                         </div>
-                        <div class="small_footer_nav_left">
-                            <p class="small_contact_us">All Categories</p>
-                            <p class="small_contact_us">Help</p>
-                            <a href="#top"><p class="small_contact_us">Back to Top</p></a>
+                        <div class="small_footer_left">
+                            <div class="small_footer_logo">
+                                <p class="small_contact">Contact us</p>
+                                <div class="small_logo_wrapper">
+                                    <a href="#" target="_blank"><img class="small_logo_foot" src="assets/facebook.png" alt="Logo_Facebook" /></a>
+                                    <a href="#" target="_blank"><img class="small_logo_foot" src="assets/contact.png" alt="Logo_Facebook" /></a>
+                                    <a href="#" target="_blank"><img class="small_logo_foot" src="assets/instagram.png" alt="Logo_Facebook" /></a>
+                                </div>
+                            </div>
+                            <div class="small_footer_nav_left">
+                                <p class="small_contact_us">All Categories</p>
+                                <p class="small_contact_us">Help</p>
+                                <a href="#top"><p class="small_contact_us">Back to Top</p></a>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
         <script src="script.js"></script>
     </body>
 </html>

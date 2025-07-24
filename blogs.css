@@ -8,6 +8,10 @@ html, body {
   height: 100%;
 }
 
+a{
+    text-decoration: none;
+}
+
 /* ============================================================================================================== */
 /* MUSIC-START */
 /* ============================================================================================================== */
@@ -40,10 +44,6 @@ html, body {
 /* ============================================================================================================== */
 /* MUSIC-END */
 /* ============================================================================================================== */
-
-a{
-    text-decoration: none;
-}
 
 .content{
     flex:1;
@@ -223,6 +223,277 @@ ul li:hover > .blogs {
 
 /* ============================================================================================================== */
 /* NAVIGATION-END */
+/* ============================================================================================================== */
+
+/* ============================================================================================================== */
+/* HOME-START */
+/* ============================================================================================================== */
+
+.main_content{
+    padding: 5rem 7rem;
+}
+
+.main_content h1{
+    font-size: 3rem;
+    padding-bottom: 1rem;
+    font-style: italic;
+}
+
+.fill_img {
+  min-width: 40rem;
+  max-width: 40rem;
+  min-height: 20rem;
+  max-height: 20rem;
+  object-fit: cover;
+  display: block;
+}
+
+.home_main{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    height: auto;
+}
+
+.home_main_text{
+    padding-left: 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    position: relative;
+}
+
+.main_title{
+    font-size: clamp(1rem, 2.5vw, 3rem);
+    margin-bottom: 1rem;
+}
+
+.main_author{
+    color: #BCBBBB;
+}
+
+.blog_content{
+    margin-top: clamp(0.1rem, 1vw, 1rem);
+    margin-bottom: clamp(0.1rem, 2vw, 2rem);
+    font-size: clamp(0.1rem, 1.2vw, 1.3rem);
+    font-style: italic;
+}
+
+.read_now_main{
+    text-decoration: none;
+    color: white;
+    background-color: black;
+    padding: .7rem;
+    width: 30%;
+    text-align: center;
+    border-radius: 2rem;
+}
+
+.read_now_main:hover{
+    color: black;
+    background-color: white;
+    border: 1px solid black;
+}
+
+.other{
+    display: flex;
+    align-items: center;
+    margin: clamp(2%, 3vh, 10%) 7%;
+    gap: clamp(0.7rem, 1vw, 1rem); 
+}
+
+.other h1 {
+    font-size: clamp(1rem, 7vw, 3rem);
+    white-space: nowrap;
+    padding-right: clamp(1rem, 0.5vw, 2rem);
+}
+
+.line{
+    flex-grow: 1;
+    height: 0.1rem;
+    background-color: black; 
+}
+
+.fill_img_scroll{
+    min-width: 22rem;
+    max-width: 22rem;
+    min-height: 12rem;
+    max-height: 12rem;
+    display: block;
+    object-fit: cover;
+}
+
+.fill_img_scroll.shane, .fill_img_scroll.randel{
+    object-position: 50% 87%;
+}
+.fill_img_scroll.yona{
+    object-position: top;
+}
+.fill_img_scroll.blogart{
+    object-position: 50% 20%;
+}
+
+.home_blogs{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: 2rem 1rem;
+    max-width: 100%;
+    margin: 0;
+}
+
+.read_now{
+    text-decoration: none;
+    font-size: 1rem;
+    font-style: italic;
+    color: black;
+    background-color: white;
+    width: 30%;
+    padding: 0.4rem 0;
+    text-align: center;
+    border-radius: 3rem;
+    border: 0.1rem solid black;
+    margin: 1.5rem 0 0.5rem 0;
+}
+
+.read_now:hover{
+    background-color: black;
+    color: white
+}
+
+.blog_title {
+    font-size: clamp(0.5rem, calc(1vw + 1vh), 2rem);
+    width: 90%;
+}
+
+.blog_author{
+    font-size: 0.8rem;
+    width: 75%;
+}
+
+.scroll_container{
+    display: flex;      
+    align-items: flex-start;      
+    flex-wrap: nowrap;          
+    overflow-x: auto;        
+    scroll-behavior: smooth;
+    gap: 1rem;                  
+    padding: 0.5rem; 
+    scrollbar-width: none;         
+    -ms-overflow-style: none;     
+    overflow-y: hidden;
+}
+
+.scroll_container::-webkit-scrollbar {
+    display: none;                
+}
+
+.scroll_padding{
+    padding: 0rem 7rem 5rem 7rem;
+    position: relative;
+    top: 0;
+    width: 100%;
+    overflow: hidden;
+}
+
+
+.scroll_wrapper{
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.scroll_btn {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 1rem;
+  z-index: 5;
+}
+
+
+
+/* ============================================================================================================== */
+/* HOME-END */
+/* ============================================================================================================== */
+
+/* ============================================================================================================== */
+/* FOOTER-START */
+/* ============================================================================================================== */
+.footer {
+    position: relative;
+    background: black;
+    z-index: 1000;
+}
+
+.contact_us{
+    color: white;
+}
+
+.contact{
+    color: white;
+    font-size: 2.5rem;
+}
+
+.footer_nav_left {
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+}
+
+.footer_nav_left p{
+    margin-top: 1rem;
+    margin-right: 1rem;
+}
+
+.footer_nav_right {
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+}
+
+.footer_nav_right p{
+    margin-top: 1rem;
+    margin-left: 1rem;
+}
+
+.footer_title{
+    color: white;
+    text-align: right;
+    font-size: 2.5rem;
+}
+
+.footer_l_r {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 2rem;
+}
+
+.logo_wrapper{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.logo_foot{
+    width: 2.5rem;
+    height: 2.5rem;
+    margin-left: 1rem;
+}
+
+.footer_logo {
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+}
+
+.small_footer{
+    display: none;
+}
+
+/* ============================================================================================================== */
+/* FOOTER-END */
 /* ============================================================================================================== */
 
 /* ============================================================================================================== */
@@ -670,10 +941,10 @@ img.garam {
     padding-bottom: 0;
 }
 
-/* ============================================================================================================== */
+/* ==============================================================================================================
 /* FOOTER-START */
 /* ============================================================================================================== */
-.footer {
+/* .footer {
     position: relative;
     background: black;
     bottom: 0;
@@ -746,7 +1017,7 @@ img.garam {
 
 .small_footer{
     display: none;
-}
+} */
 
 /* ============================================================================================================== */
 /* FOOTER-END */
@@ -755,7 +1026,6 @@ img.garam {
 /* ============================================================================================================== */
 /* RESPONSIVENESS */
 /* ============================================================================================================== */
-
 /* ============================================================================================================== */
 /* IPAD/TABLET */
 /* ============================================================================================================== */
@@ -765,60 +1035,62 @@ img.garam {
     }
 }
 
-@media (max-width: 1350px) {
+@media (max-width: 1420px) {
     .read_now{
         width: 50%;
     }
-    .blog_title{
-        width: 90%;
-        font-size: 2rem;
+
+    .fill_img{
+        min-width: 35rem;
+        max-width: 35rem;
     }
 }
 
-@media (max-width: 1250px) {
+@media (max-width: 1300px) {
 
     .read_now{
         width: 50%;
     }
-    .blog_title{
-        width: 90%;
-        font-size: 2rem;
+    .fill_img{
+        min-width: 30rem;
+        max-width: 30rem;
     }
-    
-    .fill_img {
-        max-width: 43rem;
-        max-height: 30rem;
+
+    .about_profile{
+        max-width: 20rem;
+        min-width: 20rem;
     }
+
+    .profile{
+        max-width: 20rem;
+        min-width: 20rem;
+    }
+
 }
 @media (max-width: 1190px) {
 
     .read_now{
         width: 50%;
     }
-    .blog_title{
-        width: 90%;
-        font-size: 2rem;
+
+    .fill_img{
+        min-height: 17rem;
+        max-height: 17rem;
     }
-    .line{
-        width: 57%;
+
+    .about_profile{
+        max-width: 17rem;
+        min-width: 17rem;
     }
-    .blog_content{
-        font-size: 1.3rem;
+
+    .profile{
+        max-width: 17rem;
+        min-width: 17rem;
     }
 }
 @media (max-width: 1090px) {
     .read_now{
         width: 50%;
-    }
-    .blog_title{
-        width: 90%;
-        font-size: 2rem;
-    }
-    .line{
-        width: 53%;
-    }
-    .blog_content{
-        font-size: 1.1rem;
     }
 }
 
@@ -1000,9 +1272,11 @@ img.garam {
 
 
     ul li ul.dropdown li:last-child, ul li ul.dropdown li:last-child:hover {
+        padding-bottom: 0.3rem;
         border-bottom-left-radius: 0;
         border-bottom-right-radius: 0;
     }
+
 
     .dropdown.show {
         display: flex !important;
@@ -1028,18 +1302,22 @@ img.garam {
     .home_main{
         flex-direction: column;
         justify-content: right;
-        padding: 0;
-    }
-
-    .main_content h1{
-        text-align: left;
-        padding: 4rem 0 0 11rem;
     }
 
     .main_content{
         padding: 0;
-        width: 100%;
+        margin: 5rem 7rem 7rem 7rem;
+        
     }
+
+    .read_now_main{
+        width: 20%;
+    }
+
+    /* .main_content h1{
+        text-align: left;
+        padding: 4rem 0 0 11rem;
+    }*/
 
     .image-wrapper {
         display: flex;
@@ -1047,33 +1325,38 @@ img.garam {
         align-items: center;    
     }
 
+    .main_title{
+        font-size: 2.5rem;
+        margin-bottom: 0.5rem;
+    }
+
+    .main_author{
+        font-size: 1.2rem;
+        margin-bottom: 1.2rem;
+    }
+
     .fill_img {
-        border: 1px solid black;
-        margin: 2rem 0;
+        min-width: 100%;
+        max-width: 100%;
+        min-height: 25rem;
+        max-height: 25rem;
+    } 
+
+    .blog_content{
+        font-size: 1.7rem;
     }
 
     .home_main_text{
-        padding: 0 11rem;
-    }
-
-    .blog_content{
-        font-size: 1.4rem;
-    }
-
-    .read_now_main{
-        margin-bottom: 7rem;
-    }
-
-    .home_main_text h2{
-        font-size: 2rem;
+        padding: 0;
+        margin-top: 1rem;
     }
 
     .scroll_padding{
-        padding: 3rem 0rem;
+        padding: 0;
         position: relative;
         width: 100%;
         overflow: hidden;
-        margin: 0;
+        margin: 0 0 2rem 0;
     }
 
     .scroll_btn{
@@ -1086,10 +1369,10 @@ img.garam {
     }
 
     .fill_img_scroll{
-        min-width: 20rem;
-        max-width: 20rem;
-        min-height: 12rem;
-        max-height: 12rem;
+        min-width: 28rem;
+        max-width: 28rem;
+        min-height: 15rem;
+        max-height: 15rem;
         display: relative;
     }
 
@@ -1119,13 +1402,13 @@ img.garam {
     /* ============================================================================================================== */
 
     .about_profile{
-            max-width: 17rem;
-            min-width: 10%;
-            max-height: auto;
-            min-height: auto;
-            aspect-ratio: 1/1;
-            display: block;
-            object-fit: cover;
+        max-width: 25rem;
+        min-width: 25rem;
+    }
+
+    .profile{
+        max-width: 25rem;
+        min-width: 25rem;
     }
 
     .about_content{
@@ -1191,9 +1474,9 @@ img.garam {
     /* ============================================================================================================== */
     /* HAMBURGER-END */
     /* ============================================================================================================== */
-    .main_content h1, .home_main_text{
+    /* .main_content h1, .home_main_text{
         padding-left: 9rem;
-    }
+    } */
     /* ============================================================================================================== */
     /* ABOUT-US-START */
     /* ============================================================================================================== */
@@ -1219,6 +1502,16 @@ img.garam {
     .whole_profile_ipad{
         display: flex;
         flex-direction: column;
+    }
+
+    .about_profile{
+        max-width: 20rem;
+        min-width: 20rem;
+    }
+
+    .profile{
+        max-width: 20rem;
+        min-width: 20rem;
     }
 
     /* ============================================================================================================== */
@@ -1282,20 +1575,21 @@ img.garam {
 
 @media (max-width: 770px){
     .fill_img {
-        max-width: 35rem;
-        min-width: 35rem;
-        max-height: 20rem;
-        min-height: 20rem;
+        max-width: 30rem;
+        min-width: 30rem;
+        max-height: 15rem;
+        min-height: 15rem;
     }
 
     .read_now_main{
-        width: 40%;
-        margin-bottom: 5rem;
+        width: 30%;
+        margin-bottom: 1rem;
     }
 
-    .home_main_text{
-        padding: 0 5rem;
+    .blog_content{
+        margin-bottom: 2rem;
     }
+
     /* ============================================================================================================== */
     /* HAMBURGER-START */
     /* ============================================================================================================== */
@@ -1306,33 +1600,7 @@ img.garam {
     /* ============================================================================================================== */
     /* HAMBURGER-END */
     /* ============================================================================================================== */
-    /* ============================================================================================================== */
-    /* ABOUT-US-START */
-    /* ============================================================================================================== */
 
-    .about_profile{
-            max-width: 15rem;
-            min-width: 10%;
-            max-height: auto;
-            min-height: auto;
-            aspect-ratio: 1/1;
-            display: block;
-            object-fit: cover;
-    }
-    .about_blog_content{
-        padding-top: 0.5rem;
-        font-size: 0.8rem;
-        word-spacing: 0.2rem;
-        line-height: 1.1rem;
-    }
-
-    .whole_profile{
-        display: none;
-    }
-
-    /* ============================================================================================================== */
-    /* ABOUT-US-END */
-    /* ============================================================================================================== */
     /* ============================================================================================================== */
     /* FOOTER-START */
     /* ============================================================================================================== */
@@ -1341,7 +1609,6 @@ img.garam {
         background: black;
         bottom: 0;
         left: 0;
-
         padding: 1.5rem;
     }
 
@@ -1416,9 +1683,31 @@ img.garam {
     /* ============================================================================================================== */
     /* ABOUT-US-START */
     /* ============================================================================================================== */
-    .about_content{
-        margin-top: 3rem;
+
+    .about_profile{
+        max-width: 80%;
+        min-width: 10%;
     }
+
+    .profile{
+        max-width: 80%;
+        min-width: 10%;
+        margin-left: auto;
+        margin-right: auto;
+
+    }
+
+    .about_blog_content{
+        padding-top: 0.5rem;
+        font-size: 0.8rem;
+        word-spacing: 0.2rem;
+        line-height: 1.1rem;
+    }
+
+    .about_content{
+        margin: 3rem;
+    }
+
     .about_main{
         display: flex;
         flex-direction: column;
@@ -1432,10 +1721,6 @@ img.garam {
         max-height: 18rem;
     }
 
-    /* .about_content h1{
-        margin-bottom: 3rem;
-    } */
-
     .about_main_text{
         padding-left: 0;
         text-align: center;
@@ -1448,7 +1733,7 @@ img.garam {
 
     .about_blog_content{
         padding-top: 0.5rem;
-        font-size: 1.2rem;
+        font-size: clamp(0.3rem, 2vh, 1.2rem);
         word-spacing: 0.2rem;
         line-height: 1.5rem;
     }
@@ -1456,7 +1741,7 @@ img.garam {
     .whole_profile_ipad{
         display: flex;
         flex-direction: column;
-        margin: 1rem 5rem 2rem 5rem;
+        margin: 1rem 2.5rem 2rem 2.5rem;
     }
 
     .whole_profile{
@@ -1471,13 +1756,17 @@ img.garam {
     }
 
     .profile h1{
-        font-size: clamp(0.3rem, 4vw, 3rem);
+        font-size: clamp(0.7rem, 6vw, 2rem);
         text-align: center;
     }
+    .role{
+        font-size: clamp(0.2rem, 3vw, 2rem);
+    }
 
-    .profile p{
-        font-size: clamp(0.3rem, 3vw, 1rem);
+    .descrip{
+        font-size: clamp(0.5rem, 5vw, 1.5rem);
         text-align: center;
+        margin-top: clamp(0.3rem, 3vw, 2rem);
     }
 
     /* ============================================================================================================== */
@@ -1487,8 +1776,8 @@ img.garam {
 
 @media (max-width: 690px){
     .fill_img {
-        max-width: 30rem;
-        min-width: 30rem;
+        max-width: 25rem;
+        min-width: 25rem;
     }
 }
 
@@ -1552,7 +1841,6 @@ img.garam {
             padding: 0;
             margin: 0;
             background-color: #252525;
-            z-index: 9;
             display: none;
             flex-direction: column;
             height: auto;
@@ -1696,23 +1984,18 @@ img.garam {
     /* ============================================================================================================== */
     /* HOME-START */
     /* ============================================================================================================== */
+    
+    .main_content{
+        margin: 3rem 4rem 0 4rem;
+    }
 
     .main_content h1{
         font-size: 2rem;
-        padding: 3rem 0 1rem 3rem;
         font-style: italic;
         text-align: left;
     }
 
-    .fill_img {
-        max-width: 20rem;
-        min-width: 20rem;
-        max-height: 10rem;
-        min-height: 10rem;
-    }
-
     .home_main_text{
-        padding: 1rem 2.8rem 0 2.8rem;
         display: flex;
         flex-direction: column;
         justify-content: left;
@@ -1724,7 +2007,6 @@ img.garam {
     }
 
     .blog_content{
-        padding: 1rem 0;
         font-size: 0.7rem;
         font-style: italic;
         text-align: left;
@@ -1786,8 +2068,8 @@ img.garam {
     }
 
     .blog_title{
-        font-size: 1.5rem;
-        width: 100%;
+        font-size: 1rem;
+        width: auto;
     }
 
     .blog_author{
@@ -1818,16 +2100,101 @@ img.garam {
     /* HOME-END */
     /* ============================================================================================================== */
 
-   /* ============================================================================================================== */
+    /* ============================================================================================================== */
     /* FOOTER-START */
     /* ============================================================================================================== */
-    .footer {
-        position: relative;
-        background: black;
-        bottom: 0;
-        left: 0;
-        padding: 1.5rem;
+
+    .contact_us{
+        color: white;
     }
+
+    .contact{
+        color: white;
+        font-size: 1.5rem;
+        width: 8rem;
+    }
+
+    .footer_nav_left {
+        display: flex;
+        flex-direction: row;
+        justify-content: left;
+        font-size: 0.4rem;
+        width: 9rem;
+    }
+
+    .footer_nav_left p{
+        padding-right: 0.4;
+    }
+
+    .footer_nav_right {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        font-size: 0.4rem;
+        width: 15rem;
+    }
+
+    .footer_nav_right p{
+        padding-left: 0.;
+    }
+
+    .footer_title{
+        color: white;
+        text-align: right;
+        font-size: 1.5rem;
+    }
+
+    .footer_l_r {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        padding: 0;
+    }
+
+    .logo_wrapper{
+        display: flex;
+        flex-direction: row;
+        justify-content: left;
+    }
+
+    .logo_foot{
+        width: 1.5rem;
+        height: 1.5rem;
+    }
+
+    .footer_logo {
+        display: flex;
+        flex-direction: row;
+        justify-content: left;
+    }
+
+    /* ============================================================================================================== */
+    /* FOOTER-END */
+    /* ============================================================================================================== */
+    
+}
+
+@media (max-width: 530px) {
+    /* ============================================================================================================== */
+    /* HOME-START */
+    /* ============================================================================================================== */
+    
+    .fill_img {
+        max-width: 18rem;
+        min-width: 18rem;
+        max-height: 10rem;
+        min-height: 10rem;
+    }
+
+    .read_now_main{
+        margin-bottom: 1rem;
+    }
+    /* ============================================================================================================== */
+    /* HOME-END */
+    /* ============================================================================================================== */
+    /* ============================================================================================================== */
+    /* FOOTER-START */
+    /* ============================================================================================================== */
 
     .contact_us{
         color: white;
@@ -1846,11 +2213,11 @@ img.garam {
         justify-content: left;
         font-size: 0.3rem;
         width: 9rem;
-    }
+    } */
 
     .footer_nav_left p{
         padding-right: 0.1;
-    }
+    } 
 
     .footer_nav_right p{
         padding-left: 0.1;
@@ -1891,17 +2258,27 @@ img.garam {
     /* ============================================================================================================== */
     /* FOOTER-END */
     /* ============================================================================================================== */
+    /* ============================================================================================================== */
+    /* ABOUT-US-START */
+    /* ============================================================================================================== */
+    .profile h1{
+        font-size: clamp(0.7rem, 4.5vw, 2rem);
+        text-align: center;
+    }
+
+    .role{
+        font-size: clamp(0.2rem, 2vw, 2rem);
+    }
     
-}
-
-@media (max-width: 470px) {
-    .niña_image_title{
-        font-size: clamp(0.5rem, 3vw, 0.7rem) !important;
+    .descrip{
+        font-size: clamp(0.5rem, 2.5vw, 1.5rem);
+        text-align: center;
+        margin-top: clamp(0.3rem, 3vw, 2rem);
     }
 
-    .niña_painter_title{
-        font-size: clamp(0.3rem, 2.5vw, 0.5rem) !important;
-    }
+    /* ============================================================================================================== */
+    /* ABOUT-US-END */
+    /* ============================================================================================================== */
 }
 
 @media (max-width: 460px) {
@@ -1921,22 +2298,52 @@ img.garam {
 
 }
 
-@media (max-width: 400px) {
+@media (max-width: 395px) {
     /* ============================================================================================================== */
     /* HOME-START */
     /* ============================================================================================================== */
     
     .fill_img {
-        max-width: 15rem;
         min-width: 15rem;
-        max-height: 10rem;
-        min-height: 10rem;
-        margin: 0;
+        max-width: 15rem;
+        min-height: 7rem;
+        max-height: 7rem;
     }
 
-    .read_now_main{
-        margin-bottom: 1rem;
+    .home_main_text h2{
+        font-size: 1rem;
     }
+
+    .main_author{
+        font-size: 0.5rem;
+    }
+
+    .blog_content{
+        font-size: 0.8rem;
+    }
+
+    /* .other{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        margin: 1rem 3rem;
+    }
+
+    .other h1 {
+        font-size: 1.5rem;
+        padding: 0;
+        width: 100%;
+
+    } */
+
+    .scroll_container{
+        gap: 0.5rem;                  
+    }
+/* 
+    .line{
+        width: 70%;
+        margin: auto 0;
+    } */
     /* ============================================================================================================== */
     /* HOME-END */
     /* ============================================================================================================== */
@@ -1954,6 +2361,7 @@ img.garam {
     /* FOOTER-END */
     /* ============================================================================================================== */
 }
+
 @media (max-width: 376px) {
     /* ============================================================================================================== */
     /* HAMBURGER-START */
@@ -1998,40 +2406,52 @@ img.garam {
     /* ============================================================================================================== */
 }
 
-@media (max-width: 365px) {
+@media (max-width: 360px) {
+    /* ============================================================================================================== */
+    /* HAMBURGER-START */
+    /* ============================================================================================================== */
+    .title{
+        font-size: 150%;
+        margin: auto;
+    }
+    .subtitle{
+        font-size: 60%;
+        margin: auto;
+    }
+    .hamburger{
+        font-size: 150%;
+        z-index: 999;
+    }
+    /* ============================================================================================================== */
+    /* HAMBURGER-END */
+    /* ============================================================================================================== */
     /* ============================================================================================================== */
     /* HOME-START */
     /* ============================================================================================================== */
-    
-    .fill_img {
-        min-width: 70%;
-        max-width: 70%;
-        min-height: 70%;
-        max-height: 70%;
-    }
-
-    /* .other{
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        margin: 1rem 3rem;
-    }
-
-    .other h1 {
-        font-size: 1.5rem;
+    /* .other h1 {
+        font-size: 1.2rem;
         padding: 0;
         width: 100%;
-
     } */
+
+    .fill_img{
+        min-width: 12rem;
+        max-width: 12rem;
+    }
+
+    .main_content h1{
+        font-size: 150%;
+        padding: auto 1rem;
+    }
 
     .scroll_container{
         gap: 0.5rem;                  
     }
-/* 
+
     .line{
-        width: 70%;
+        width: 80%;
         margin: auto 0;
-    } */
+    }
     /* ============================================================================================================== */
     /* HOME-END */
     /* ============================================================================================================== */
@@ -2051,6 +2471,7 @@ img.garam {
         color: white;
         padding: 2rem;
         width: 100%;
+        
     }
 
     .small_footer_logo {
@@ -2115,56 +2536,7 @@ img.garam {
     /* ============================================================================================================== */
 }
 
-@media (max-width: 345px) {
-    /* ============================================================================================================== */
-    /* HAMBURGER-START */
-    /* ============================================================================================================== */
-    .title{
-        font-size: 150%;
-        margin: auto;
-    }
-    .subtitle{
-        font-size: 60%;
-        margin: auto;
-    }
-    .hamburger{
-        font-size: 150%;
-        z-index: 999;
-    }
-    /* ============================================================================================================== */
-    /* HAMBURGER-END */
-    /* ============================================================================================================== */
-    /* ============================================================================================================== */
-    /* HOME-START */
-    /* ============================================================================================================== */
-    /* .other h1 {
-        font-size: 1.2rem;
-        padding: 0;
-        width: 100%;
-    } */
 
-    .fill_img{
-        max-width: 13rem;
-        
-    }
-
-    .main_content h1{
-        font-size: 150%;
-        padding: auto 1rem;
-    }
-
-    .scroll_container{
-        gap: 0.5rem;                  
-    }
-
-    .line{
-        width: 80%;
-        margin: auto 0;
-    }
-    /* ============================================================================================================== */
-    /* HOME-END */
-    /* ============================================================================================================== */
-}
 
 /* ============================================================================================================== */
 /* BLOG VIEWPOINT */
