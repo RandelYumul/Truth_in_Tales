@@ -1637,8 +1637,8 @@ ul li:hover > .blogs {
     }
 
     .fill_img_scroll{
-        /* min-width: 15rem;
-        max-width: 15rem; */
+        min-width: 15rem;
+        max-width: 15rem;
         min-height: 10rem;
         max-height: 10rem;
         display: block;
@@ -1651,7 +1651,7 @@ ul li:hover > .blogs {
         padding-bottom: 2rem;
         padding-top: 0;
         max-width: 100%;
-        margin: 0;
+        margin: 0 ;
     }
 
     .scroll_padding{
