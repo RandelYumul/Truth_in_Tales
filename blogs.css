@@ -223,6 +223,9 @@ ul li ul.dropdown li:hover {
     border-bottom-right-radius: 2rem;
     padding-bottom: 0.3rem;
 }
+.last_blog{
+    color: black !important;
+}
 
 ul li ul.dropdown li:last-child, ul li ul.dropdown li:last-child:hover {
     padding-bottom: 0.3rem;
@@ -958,87 +961,6 @@ img.garam {
     padding-bottom: 0;
 }
 
-/* ==============================================================================================================
-/* FOOTER-START */
-/* ============================================================================================================== */
-/* .footer {
-    position: relative;
-    background: black;
-    bottom: 0;
-    left: 0;
-    z-index: 1000;
-    justify-content: flex-end;
-}
-
-.contact_us{
-    color: white;
-}
-
-.contact{
-    color: white;
-    font-size: 2.5rem;
-}
-
-.footer_nav_left {
-    display: flex;
-    flex-direction: row;
-    justify-content: left;
-}
-
-.footer_nav_left p{
-    margin-top: 1rem;
-    margin-right: 1rem;
-}
-
-.footer_nav_right {
-    display: flex;
-    flex-direction: row;
-    justify-content: left;
-}
-
-.footer_nav_right p{
-    margin-top: 1rem;
-    margin-left: 1rem;
-}
-
-.footer_title{
-    color: white;
-    text-align: right;
-    font-size: 2.5rem;
-}
-
-.footer_l_r {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    padding: 2rem;
-}
-
-.logo_wrapper{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-}
-
-.logo_foot{
-    width: 2.5rem;
-    height: 2.5rem;
-    margin-left: 1rem;
-}
-
-.footer_logo {
-    display: flex;
-    flex-direction: row;
-    justify-content: left;
-}
-
-.small_footer{
-    display: none;
-} */
-
-/* ============================================================================================================== */
-/* FOOTER-END */
-/* ============================================================================================================== */
 
 /* ============================================================================================================== */
 /* RESPONSIVENESS */
@@ -2307,7 +2229,10 @@ img.garam {
         flex-direction: row;
         justify-content: flex-start;
         font-size: 0.3rem;
-        width: 10rem;
+        width: 1rem;
+    }
+    .sub_ref{
+        font-size: 0.5rem;
     }
     /* ============================================================================================================== */
     /* FOOTER-END */
